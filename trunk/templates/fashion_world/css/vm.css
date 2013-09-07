@@ -1,11 +1,15 @@
 .clr{clear:both;overflow:hidden;}
-.general-bg,input.custom-attribute,input.quantity-input,.manufacturer-product-link a{background:#e8e8e8 url(../images/vm/backgrounds.png) top repeat-x;border:solid #CAC9C9 1px;border-radius:4px;-webkit-border-radius:4px;-moz-border-radius:4px;color:#777;text-decoration:none;padding:5px 5px 4px;}
+.general-bg,input.custom-attribute,input.quantity-input,.manufacturer-product-link a{
+border:solid #CAC9C9 1px;
+background:white;color:#777;text-decoration:none;padding:5px 5px 4px;}
 span.custom-variant-inputbox input.custom-attribute:hover,span.quantity-box input.quantity-input:hover,input.vm-default:hover,
 span.quantity-box input.quantity-input:hover,
 .ask-a-question-view input.counter:hover,.ask-a-question-view input#email:hover,table.user-details input:hover{
-color:#000;text-decoration:none;cursor: pointer;}
+color:#000;text-decoration:none;cursor: pointer;
+background:none!important;}
 .productdetails-view .spacer-buy-area{float: right;
-width: 45%}
+width: 48%;margin-top: -24px;
+padding:0!important}
 .product-neighbours{color:#777;margin:0 0 15px;}
 .product-neighbours a.next-page{background:url(../images/vm/next_16x16.png) no-repeat right;padding-right:30px;line-height:20px;float:right;}
 .product-neighbours a.previous-page{padding-left:24px;line-height:20px;float:left;}
@@ -13,13 +17,22 @@ width: 45%}
 .productdetails-view .product-short-description{margin:0 0 15px;padding:0;}
 .productdetails-view .product-description,.product-fields{margin:15px 0;}
 .productdetails-view{margin:15px }
-span.title{font-weight:700;display:block;text-transform: uppercase;border-bottom:solid #CAC9C9 1px;font-size:14px;margin:0 0 6px;}
+span.title{font-weight: normal;
+display: block;
+text-transform: uppercase;
+border-bottom: solid #0C9100 1px;
+font-size: 14px;
+margin: 0 0 16px;
+background: #1c5d00;
+color: white;
+padding: 5px;}
 .product-packaging{margin:15px 0 0;}
 .icons{text-align:right;float:right;margin:0 0 10px 30px;}
 .additional-images img{width:50px;height:auto;border-top:1px solid #fff;border-right:1px solid #e6e6e6;border-bottom:1px solid #ccc;border-left:0;padding:6px}
+.additional-images img:hover{border:1px solid #a3c789;}
 .additional-images div:first-child img{border-left:1px solid #e6e6e6}
 .product-price{margin:0 0 15px;}
-.productdetails-view .addtocart-bar{margin:15px 0 0;padding:0;}
+.productdetails-view .addtocart-bar{margin:0;padding:0;}
 .availability{margin:0 0 5px;}
 .customer-reviews h4{border-bottom:solid #CAC9C9 1px;font-size:14px;margin:0 0 10px;padding:0 0 6px;}
 .write-reviews{text-align:center;margin:20px 0 0;}
@@ -172,7 +185,7 @@ cursor: pointer;}
 .vm2-warning{background-position:0 -1383px!important;width:50px;height:40px;}
 .vendor-store-desc,.category-view,.featured-view,.latest-view,.topten-view,.related-products-view,.browse-view,.order-view{margin-bottom:25px;}
 .category-view .row,.browse-view .row {margin:0 -8px}
-.main-image,.featured-view .product,.latest-view .product,.topten-view .product,.related-products-view .product,.center,span.center{text-align:center;border-bottom: 1px solid #e5e5e5;border-right: 1px solid #e5e5e5;}
+.main-image,.featured-view .product,.latest-view .product,.topten-view .product,.related-products-view .product,.center,span.center{text-align:center;}
 .main-image img.product-image,.featured-view .spacer img,.latest-view .spacer img,.topten-view .spacer img{max-width:100%;height:auto;width:auto;}
 .additional-images,.featured-view .product-price,.latest-view .product-price,.topten-view .product-price,.output-billto,.output-shipto{margin:10px 0;}
 .ask-a-question,.manufacturer,.manufacturer-details-view .email-weblink,.manufacturer-details-view .description{margin:0}
@@ -250,7 +263,7 @@ div.spaceStyle{padding: 0px; margin: 5px; spacing: 0px;}
 .stars-green{background-position:0 -108px !important; }
 .stars-blue{background-position:0 -162px !important;}
 .stars-purple{background-position:0 -216px !important;}
-div.productdetails-view div.main-image img{max-width:350px;text-align:left}
+div.productdetails-view div.main-image img{max-width:350px;text-align:left;padding: 3px;}
 #product-top{padding-left:12px}
 span.PricesalesPrice{font-size: 13px!important;
 font-weight: 700!important;
