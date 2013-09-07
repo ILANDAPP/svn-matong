@@ -1,0 +1,114 @@
+/*---------------------------------------------------------------
+# Package - Joomla Template based on Helix Framework   
+# ---------------------------------------------------------------
+# Author - JoomShaper http://www.joomshaper.com
+# Copyright (C) 2010 - 2012 JoomShaper.com. All Rights Reserved.
+# license - PHP files are licensed under  GNU/GPL V2
+# license - CSS  - JS - IMAGE files  are Copyrighted material 
+# Websites: http://www.joomshaper.com
+-----------------------------------------------------------------*/
+
+a,#hornav ul.level-0 > li.menu-item,
+#hornav li.menu-item li.menu-item,
+#sublevel li.menu-item li.menu-item,
+.module_menu .mod-wrapper li,
+.nscg2.ns2-vm .ns2-inner,
+.adminform button,#adminForm button,.button,button[type=submit],input[type=submit],input[type=button],
+a.readmore,input[type=text],input[type=password],input[type=submit], input[type=reset], input[type=email],
+select,textarea,.inputbox,div.pagination ul li a,.ns2-blog .ns2-row,.browse-view .product .cgacer,
+.vm-button-correct,
+.ns2-scroller img.ns2-image,
+#inner_content .category-view  .cgacer,
+.footer_social,
+a.cg-slide-morein {
+	-webkit-transition: all 500ms;
+	-moz-transition: all 500ms;
+	-o-transition: all 500ms;
+	-ms-transition: all 500ms;
+	transition: all 500ms;
+}
+
+input[type=text],input[type=password],input[type=submit], input[type=reset], input[type=email],
+select,textarea,.inputbox,.vm-button-correct{
+	-webkit-border-radius:4px;
+	-moz-border-radius:4px;
+	border-radius:4px;
+}
+/*Virtuemart layout*/
+.nssp2.ns2-vm .ns2-inner {box-shadow:0 0 1px #ccc;-moz-box-shadow:0 0 1px #ccc;-webkit-box-shadow:0 0 1px #ccc;border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px}
+/*Typography*/
+.adminform button,#adminForm button,.button,.btn,button[type=submit],input[type=submit],input[type=button],
+a.product-details,a.details,div.details,a.ask-a-question,p.readmore a,
+span.details-button input.details-button{
+ /*  color:#069;
+	background: -moz-linear-gradient(top, #f9f9f9 0%, #eeeeee 100%);
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#f9f9f9), color-stop(100%,#eeeeee));
+	background: -webkit-linear-gradient(top, #f9f9f9 0%,#eeeeee 100%);
+	background: -o-linear-gradient(top, #f9f9f9 0%,#eeeeee 100%);
+	background: -ms-linear-gradient(top, #f9f9f9 0%,#eeeeee 100%);
+	background: linear-gradient(top, #f9f9f9 0%,#eeeeee 100%);
+	-moz-border-radius:3px;	
+	-webkit-border-radius:3px;border-radius:3px;
+	-moz-box-shadow:0 0 1px #bbb;
+	-webkit-box-shadow:0 0 1px #bbb;
+	box-shadow:0 0 1px #bbb;*/
+}
+	
+/*Slideshow animation*/
+img.sp-slide-image.ease-in {margin: 0 0 0 10px!important; }
+img.sp-slide-image.ease-out {margin: 900px 0 0 10px!important;-webkit-transform: rotate(90deg);
+  -moz-transform: rotate(90deg);-o-transform: rotate(90deg);-ms-transform: rotate(90deg);
+  transform: rotate(90deg);}
+
+.sp-slide-desc.ease-out {margin: -900px 0 0 10px!important;-webkit-transform: rotate(-90deg);
+  -moz-transform: rotate(-90deg);-o-transform: rotate(-90deg);-ms-transform: rotate(-90deg);
+  transform: rotate(-90deg);}
+
+.ease-in {-webkit-transition-duration: 2s;-moz-transition-duration: 2s;-o-transition-duration: 2s;
+  -ms-transition-duration: 2s;transition-duration: 2s;-webkit-transition-property: all -webkit-transform;
+  -moz-transition-property: all -moz-transform;-o-transition-property: all -o-transform;
+  -ms-transition-property: all -ms-transform;transition-property: all transform;}
+.ease-out {-webkit-transition-duration: 2s;-moz-transition-duration: 2s;-o-transition-duration: 2s;
+  -ms-transition-duration: 2s;transition-duration: 2s;-webkit-transition-property: all -webkit-transform;
+  -moz-transition-property: all -moz-transform;-o-transition-property: all -o-transform;
+  -ms-transition-property: all -ms-transform;transition-property: all transform;}
+
+/*k2*/
+.blog img.catItemAuthorAvatar,img.itemAuthorAvatar, .userView div.userBlock img,img.commentAvatar{border-radius:100px;-moz-border-radius:100px;-webkit-border-radius:100px;}
+
+/*Blocks*/
+.sp-block1,.sp-block2,.sp-block3,.sp-block4,.sp-block5,.sp-block6,.sp-block7{margin:0 0 15px;padding:15px}
+.sp-block1{background: -moz-linear-gradient(top, #F3F3F3 0%, #E6E6E6 100%);
+background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#F3F3F3), color-stop(100%,#E6E6E6));
+background: -webkit-linear-gradient(top, #F3F3F3 0%,#E6E6E6 100%);background: -o-linear-gradient(top, #F3F3F3 0%,#E6E6E6 100%);
+background: -ms-linear-gradient(top, #F3F3F3 0%,#E6E6E6 100%);background: linear-gradient(top, #F3F3F3 0%,#E6E6E6 100%);
+-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;text-shadow: 0 1px 0 #FFFFFF;-webkit-box-flex: 2;
+-moz-box-flex: 2;box-flex: 2;}
+.sp-block2{text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+.sp-block3{text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+.sp-block4{text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+.sp-block5{text-shadow: 0 1px 0 rgba(255, 255, 255, 0.5);-webkit-border-radius: 5px;-moz-border-radius: 5px;border-radius: 5px;}
+
+/* Lables and Badges*/
+.sp-tbordered {border-collapse: separate;*border-collapse: collapsed;-webkit-border-radius: 4px;-moz-border-radius: 4px;border-radius: 4px;}
+.sp-label,.sp-badge {text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);}
+.sp-label {-webkit-border-radius: 3px;-moz-border-radius: 3px;border-radius: 3px;}
+.sp-badge {-webkit-border-radius: 9px;-moz-border-radius: 9px;border-radius: 9px;}
+
+/*SP Tab*/
+ul.tabs_container li.tab{border-radius:4px 4px 0 0;-moz-border-radius:4px 4px 0 0;-webkit-border-radius:4px 4px 0 0}
+.tab-padding {border-radius:0 4px 4px 4px;-moz-border-radius:0 4px 4px 4px;-webkit-border-radius:0 4px 4px 4px}
+
+/*Virtuemart layout*/
+.nssp2.ns2-vm .ns2-inner {box-shadow:0 0 4px #ddd;-moz-box-shadow:0 0 4px #ddd;-webkit-box-shadow:0 0 4px #ddd;border-radius:7px;-moz-border-radius:7px;-webkit-border-radius:7px}
+
+/*Module type XHTML*/
+.module_none .mod-wrapper, .module_tab .mod-wrapper {box-shadow:none;-moz-box-shadow:none;-webkit-box-shadow:none}
+.module_menu .mod-wrapper li{text-shadow:0 1px #FFF}
+
+/*Module Type Menu*/
+.mod-wrapper-menu p {text-shadow:none}
+
+/*Blog Pagination*/
+div.pagination ul li a{border-radius:4px;-moz-border-radius:4px;-webkit-border-radius:4px}
+

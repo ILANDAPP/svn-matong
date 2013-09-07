@@ -1,0 +1,423 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA Tiris Template for Joomla 2.5
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+/* Nav
+--------------------------------------------------------- */
+/* mega menu------------ */
+.ja-megamenu ul.level0 li.mega a.mega { text-shadow: 0 0 1px #000; }
+
+.ja-megamenu ul.level0 li.haschild-over a.mega span.menu-title {
+	border-radius: 5px 5px 0px 0px;
+	-webkit-border-radius: 5px 5px 0px 0px;
+}
+
+.ja-megamenu ul.level0 li.mega a.mega {
+	text-shadow: 0 1px 0 #000;
+}
+
+.ja-megamenu ul.level0 li.haschild-over a.mega span.menu-title {
+	text-shadow: none;
+}
+
+.ja-megamenu ul.level1 li.mega a.mega {
+	text-shadow: none;
+}
+
+/* subnav */
+.ja-megamenu .childcontent-inner {
+	border-radius: 0px 0px 5px 5px;
+	-webkit-border-radius: 0px 0px 5px 5px;
+}
+
+.ja-megamenu ul.level1 li.mega a.mega span.menu-title { border-radius: 0; }
+
+.ja-megamenu .childcontent-inner .childcontent-inner {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+/* css menu------------ */
+#ja-cssmenu li a { text-shadow: 0 0 1px #000; }
+
+#ja-cssmenu span.menu-title {
+	border-top-left-radius: 5px;
+	border-top-right-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+	-webkit-border-top-right-radius: 5px;
+}
+
+#ja-cssmenu li ul {
+	border-radius: 5px;
+	border-top-left-radius: 0;
+	-webkit-border-radius: 5px;
+	-webkit-border-top-left-radius: 0;
+}
+
+#ja-cssmenu li ul ul {
+	border-top-left-radius: 5px;
+	-webkit-border-top-left-radius: 5px;
+}
+
+#ja-cssmenu li li span.menu-title { border-radius: 0; }
+
+/* dropline menu------------ */
+#ja-subnav {
+	box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+	-webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+}
+
+#ja-subnav span.menu-title { border-radius: 0; }
+
+#ja-subnav ul li ul { border-radius: 5px; -webkit-border-radius: 5px; }
+
+/* main menu------------ */
+#ja-container ul.menu li a { border-radius: 10px; -webkit-border-radius: 10px; }
+
+/* slideshow
+--------------------------------------------------------- */
+.maskDesc a.readon { text-shadow: 0 0 1px #000; }
+
+#ja-slideshow .maskDesc p, #ja-slideshow .ja-articles .maskDesc p { border-radius: 5px; -webkit-border-radius: 5px; }
+
+#ja-slideshow .maskDesc .ja-slide-desc h3, #ja-slideshow .ja-articles .maskDesc .ja-slide-desc a span {
+	border-radius: 5px;
+	text-shadow: 0 1px 0 #000;
+	-webkit-border-radius: 5px;
+}
+
+/* Search
+--------------------------------------------------------- */
+#ja-search { border-radius: 5px; -webkit-border-radius: 5px; }
+
+#login-form #form-login-submit .button, #user-registration .validate, 
+#josForm .validate, .contact-form .button, .ja-typo-block button, 
+#josForm .inputbox, #user-registration input, .contact-form input, 
+.contact-form textarea, .logout-button .button, #login-form .inputbox,
+.reset-confirm button.validate {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+/* Sidenews
+--------------------------------------------------------- */
+.ja-slidenews-item img { border-radius: 5px; -webkit-border-radius: 5px; }
+
+/* WEBlinks
+--------------------------------------------------------- */
+div.categories-list .item-title { border-radius: 5px; -webkit-border-radius: 5px; }
+
+/* K2 -----*/
+div.k2LoginBlock input.button,
+div.k2UserBlock input.button { border-radius: 3px; -webkit-border-radius: 3px; }
+ 
+
+#form-login-username .inputbox, #form-login-password .inputbox  {
+	border-radius: 3px; -webkit-border-radius: 3px;
+}
+/* Author block */
+div.itemAuthorBlock {}
+
+div.itemAuthorBlock img.itemAuthorAvatar { border-radius: 5px; -webkit-border-radius: 5px; }
+
+div.itemComments ul.itemCommentsList li img { border-radius: 3px; -webkit-border-radius: 3px; }
+
+div.itemComments ul.itemCommentsList li span.commentLink a { border-radius: 5px; -webkit-border-radius: 5px; }
+
+div.itemCommentsForm .formcomment .inputbox { border-radius: 5px; -webkit-border-radius: 5px; }
+
+div.itemCommentsForm form input#submitCommentButton { border-radius: 5px; -webkit-border-radius: 5px; }
+
+.subCategoryMore { border-radius: 3px; -webkit-border-radius: 3px; }
+
+div.catItemIntroText img { border-radius: 5px; -webkit-border-radius: 5px; }
+
+div.catItemCommentsLink a { border-radius: 3px; -webkit-border-radius: 3px; }
+
+/* Read more link */
+div.catItemReadMore a { border-radius: 3px; -webkit-border-radius: 3px; }
+
+/* User info block */
+div.userBlock { border-radius: 10px; -webkit-border-radius: 10px; }
+
+div.userBlock img { border-radius: 5px; -webkit-border-radius: 5px; }
+
+div.userItemViewUnpublished { opacity: 0.9; }
+
+span.userItemImage img { border-radius: 5px; -webkit-border-radius: 5px; }
+
+div.userItemIntroText img { border-radius: 5px; -webkit-border-radius: 5px; }
+
+/* Anchor link to comments */
+div.userItemCommentsLink a { border-radius: 3px; -webkit-border-radius: 3px; }
+
+/* Read more link */
+div.userItemReadMore a { border-radius: 3px; -webkit-border-radius: 3px; }
+
+span.genericItemImage img { border-radius: 5px; -webkit-border-radius: 5px; }
+
+div.genericItemIntroText img { border-radius: 5px; -webkit-border-radius: 5px; }
+
+div.genericItemReadMore a{ border-radius: 3px; -webkit-border-radius: 3px; }
+
+.k2AccountPage div.k2AccountPageUpdate button.button { border-radius: 3px; -wekbit-border-radius: 3px; }
+
+div.k2UsersBlock ul li a.ubUserAvatar img { border-radius: 4px; -webkit-border-radius: 4px; }
+
+div.k2LatestCommentsBlock ul li a.lcAvatar img { border-radius: 3px; -webkit-border-radius: 3px; }
+
+.k2CategoriesListBlock ul li a { border-radius: 8px; -webkit-border-radius: 8px; }
+
+.pagination ul li span, ul.pagenav li span, 
+.pagination ul li strong a, 
+.pagination ul li a, 
+ul.pagenav li a { border-radius: 3px; -webkit-border-radius: 3px; }
+
+.pagination ul li span.pagenav, 
+.pagination ul li.active span { border-radius: 3px; -webkit-border-radius: 3px; }
+
+/* video -------*/
+a.ja-icon-video {
+	border-radius: 5px;
+	box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+	-webkit-border-radius: 5px;
+	-webkit-box-shadow: 0 0 3px rgba(0, 0, 0, .2);
+}
+
+.k2AccountPage .inputbox {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;
+}
+
+.search .word button {
+	border-radius: 3px;
+	-webkit-border-radius: 3px;	
+}
+
+.k2ArchivesBlock  ul li a  {
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+/* Typo-------*/
+
+/* BUBBLES
+-----------------------------------------------------------------*/
+.ja-typo-bubblect {
+	box-shadow: 0 0 3px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.5);
+}
+
+/* Common Style for Rounded Bubbles --- */
+.bubble-rounded .ja-typo-bubblect {
+	border-radius: 18px;
+	-moz-border-radius: 18px;
+	-webkit-border-radius: 18px;
+}
+
+/* Rounded Box*/
+.box-rounded {
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px; 
+	box-shadow: 0 0 3px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.5);
+}
+
+/* Rounded Box*/
+.legend-rounded {
+	border-radius: 8px;
+	-moz-border-radius: 8px;
+	-webkit-border-radius: 8px; 
+	box-shadow: 0 0 3px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.5);
+}
+
+/* BUTTONS
+--------------------------------------------------*/
+/* Common Buttons Style ---*/
+a.ja-typo-btn {
+	box-shadow: 0 0 3px rgba(0,0,0,.5);
+	-moz-box-shadow: 0 0 3px rgba(0,0,0,.5);
+	-webkit-box-shadow: 0 0 3px rgba(0,0,0,.5);
+}
+
+/* Common style for Rounded Buttons --- */
+.btn-rounded-icn, .btn-rounded-big, .btn-rounded-sm,
+.btn-rounded-icn span, .btn-rounded-big span, .btn-rounded-sm span {
+	border-radius: 18px;
+	-moz-border-radius: 18px;
+	-webkit-border-radius: 18px; 
+}
+
+.btn-rounded-sm, .btn-rounded-sm span {
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px; 
+}
+
+/* Common style for Rounded Tags --- */
+span.tag-rounded {
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px; 
+}
+
+/* Style 2 */
+fieldset.fieldset-2 {
+	border-radius: 12px;
+	-moz-border-radius: 12px;
+	-webkit-border-radius: 12px; 
+}
+
+.ja-typo-blockswrap h2.ja-typo-title span { text-shadow: 0 -1px 1px rgba(255,255,255,.8); }
+
+/* Common style for Dark Buttons --- */
+a.btn-blue,
+a.btn-red,
+a.btn-green,
+a.btn-orange,
+a.btn-black { text-shadow: 0 1px 2px rgba(0,0,0,.8); }
+
+/* Common Buttons Style ---*/
+a.ja-typo-btn { text-shadow: 0 1px 2px rgba(255,255,255,.8); }
+
+span.ja-typo-tag { text-shadow: 0 -1px 0 rgba(0,0,0,.5); }
+
+span.tag-grey { text-shadow: 0 -1px 0 rgba(255,255,255,.8); }
+
+p.readmore a {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+.subCategory:hover .subCategoryMore {
+	text-shadow: 1px 1px 0 #fff;
+}
+
+.catItemMeta, .userItemMeta, .itemMeta {
+	text-shadow: 1px 1px 0 #fff;
+}
+
+.blog-featured p.images-border img.img-border,
+.item-page p.images-border img.img-border,
+p img.img-border {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+ul.categories-module li a,
+ul.category-module li a,
+ul.archive-module li a {
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+img.img-top {
+	border-radius: 5px;
+	-webkit-border-radius: 5px; 
+}
+
+#ja-topsl1 div.custom a.readmore {
+    border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+body.contentpane img.img-border {
+	border-radius: 5px !important;
+	-webkit-border-radius: 5px !important;
+}
+
+body.contentpane #login-form p .txtbox {
+    border-radius: 5px;
+    -webkit-border-radius: 5px;
+}
+
+body.contentpane #login-form input.button, 
+#mailtoForm button.button {
+	  background: #3A3A3A;
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+}
+
+body.contentpane .formelm input.inputbox {
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+div.ja-moduletable .search, 
+div.moduletable .search {
+	border-radius: 5px; 
+	-webkit-border-radius: 5px;
+}
+
+input#jform_username,
+input#jform_token,
+.login-fields input,
+.login button.button  {
+	border-radius: 5px; 
+	-webkit-border-radius: 5px;
+}
+
+.filter-search button.button {
+	border-radius: 10px;
+	-webkit-border-radius: 10px;
+}
+
+#ja-masshead span {
+	text-shadow: 1px 1px 0 #000;
+}
+
+#login-form #form-login-submit .button,
+.logout-button .button,
+#user-registration .validate,
+#josForm .validate,
+.reset-confirm button.validate,
+.login  button.button {
+	text-shadow: 1px 1px 0px #333;
+}
+
+.reset-confirm button.validate:hover,
+.login  button.button:hover {
+	text-shadow: 1px 1px 0px #bf2e2d;
+}
+
+.search .word button:hover, 
+.contact-form .button:hover, 
+#login-form #form-login-submit 
+.button:hover, #user-registration .validate:hover,
+#josForm .validate:hover, 
+.logout-button .button:hover, 
+.content_vote input.button:hover {
+	text-shadow: 1px 1px 0px #bf2e2d;
+}
+
+/* Moduletable class suffix --- */
+div.moduletable.grey {
+	border-radius : 4px; 
+	-webkit-border-radius : 4px; 
+}
+
+/* Content Slider -----*/
+.ja-contentslider-center .ja-image img { filter: alpha(opacity = 50); opacity: 0.5; }
+ 
+.ja-contentslider-center .ja-image img:hover { filter: alpha(opacity = 80); opacity: 0.8; }
+
+/* hack for opera */
+@media all and (-webkit-min-device-pixel-ratio:10000),not all and (-webkit-min-device-pixel-ratio:0) {
+.nts-category-wrap .nts-category { padding-left:6px !important; padding-right:6px !important; }
+}
+
+.tiris .ja-zincontent img {
+	-moz-border-radius: 0px;
+	-webkit-border-radius: 0px;
+}

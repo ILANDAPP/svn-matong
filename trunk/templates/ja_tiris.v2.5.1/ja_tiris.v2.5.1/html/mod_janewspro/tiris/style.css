@@ -1,0 +1,293 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA News Pro module for Joomla 1.7
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+ */
+.ja-zinwrap.tiris {
+	background: url("images/bg-line.gif") repeat-x scroll 0 0;
+	padding-top: 6px;
+}
+
+.tiris .ja-zin {
+}
+
+.tiris .ja-zin .items-row {
+	margin: 0;
+	padding: 0;
+	background: none;
+	float: left;
+}
+
+.tiris .ja-zin .ja-box .ja-box-inner {
+	margin: 0;
+	padding: 0px 15px;
+}
+
+.tiris .ja-zin .col-last .ja-box-inner {
+	border-right: 0;
+}
+
+/* HEADING
+--------------------------------------------- */
+/* Section --- */
+.tiris .ja-zinsec {
+	padding: 12px 0 0;
+	position: relative;
+	float: left;
+}
+
+.tiris .items-row {
+	border: none;
+	float: left;
+}
+
+.tiris .items-row:hover .ja-zinsec a {
+}
+
+.tiris .ja-zinsec h2 {
+	background: none;
+	font-size: 140%;
+	padding-left: 15px !important;
+	padding-right: 15px !important;
+	margin-bottom: 5px !important;
+}
+
+/* Category --- */
+.tiris .ja-zincat h3 {
+	margin: 0 0 5px !important;
+	padding: 0 !important;
+	background: none;
+	font-size: 140%;
+}
+
+.tiris .ja-zincat h3 a {
+	color: #666;
+}
+
+/* News Title --- */
+.tiris .ja-zin h4.ja-zintitle {
+	margin: 0 0 5px !important;
+	padding: 0 !important;
+	font-size: 110%;
+	font-weight: bold;
+	text-transform: none;
+}
+
+.tiris .ja-zin h4.ja-zintitle a:hover {
+	color: #cf1f18 !important;
+}
+
+/* CONTENT
+--------------------------------------------- */
+.tiris .ja-zincontent p {
+	margin: 5px 0 !important;
+}
+
+/* Image ---*/
+.tiris .ja-zincontent img {
+	margin: 5px 0;
+	border: none;
+	padding: 0px;
+	background: none;
+}
+
+.tiris .ja-zincontent img[align="left"] {
+	margin-right: 10px;
+}
+
+.tiris .ja-zincontent img[align="right"] {
+	margin-left: 10px;
+}
+
+/* Meta ---*/
+.tiris .ja-zinmeta {
+	line-height: normal;
+	background: none;
+	margin: 2px 0px 8px 0px;
+	color: #999;
+	text-transform: none !important;
+	font-size: 92%;
+	padding: 2px;
+}
+
+.tiris .ja-zinmeta .createdate {
+	text-transform: capitalize;
+}
+
+/* More Links ---*/
+.tiris .ja-zinlinks {
+	padding-top: 5px;
+	font-size: 92%;
+}
+
+.tiris .ja-zinlinks strong {
+}
+
+.tiris .ja-zinlinks ul {
+	padding: 0 !important;
+	margin: 0 !important;
+}
+
+.tiris .ja-zinlinks ul li {
+	padding: 0 0 0 10px;
+	background: url(images/arrow.png) no-repeat 1px 3px;
+	margin: 3px 0 5px;
+	line-height: normal;
+}
+
+.ja-zincontent p.readmore a {
+	color: #313131;
+	display: inline-block;
+	font-size: 95%;
+	font-weight: bold;
+	margin: 0px;
+	padding: 0px;
+	text-decoration: underline;
+	background: none;
+	text-transform: none;
+}
+
+.ja-zincontent p.readmore a:hover {
+	color: #cf1f18;
+	background: none;
+}
+
+.tip-wrap {
+	background: none repeat scroll 0 0 #FFEA97;
+	border: 0 none;
+	max-width: 300px;
+	 z-index: 999;
+}
+
+.tiris .ja-zinlinks a {
+	color: #313131;
+}
+
+/* MISC.
+------------------------------------------------*/
+/* 1st & last row/column style ---*/
+.tiris .row-last {
+	border-bottom: 0 !important;
+}
+
+.tiris .ja-mod-inner {
+	position: relative;
+}
+
+.item.article-column .ja-zintheme {
+	border-left: 1px dotted #C3C3C3;
+}
+
+.ja-usersetting-row ul li {
+	float: left;
+	margin-right: 3px;
+	margin-bottom: 3px;
+}
+
+.ja-usersetting-row ul li label {
+	font-size: 95%;
+	display: inline-block;
+}
+
+.ja-usersetting-row.options-cat ul li label {
+	vertical-align: top;
+	margin-top: 3px;
+}
+
+.ja-usersetting-row.options-img ul li label {
+	vertical-align: top;
+}
+
+.ja-usersetting-row.options-content ul li input.inputbox {
+	width: 30px;
+}
+
+/* User Settings ---*/
+.tiris .ja-usersetting {
+	margin-bottom: 10px;
+}
+
+.tiris a.ja-usersetting-loadform {
+	background: url(images/cog_8x8.png) no-repeat 8px center #ddd;
+	border: 1px solid #ccc;
+	color: #666 !important;
+	font: 10px/normal Arial, sans-serif;
+	padding: 2px 8px 1px 20px;
+	display: inline-block;
+	text-transform: uppercase;
+}
+
+.tiris a.ja-usersetting-loadform:hover,
+.tiris a.ja-usersetting-loadform:active,
+.tiris a.ja-usersetting-loadform:focus {
+	background-color: #666666;
+	border: 1px solid #666666;
+	color: #fff !important;
+	text-decoration: none;
+}
+
+.tiris .ja-usersetting-options {
+	display: block;
+	width: 330px;
+	font: 92%/normal Arial, sans-serif;
+	background: url("images/pattern-grey.gif") repeat scroll 0 0;
+	color: #333;
+}
+
+.tiris .ja-usersetting-form {
+	display: block;
+	text-align: left;
+}
+
+.tiris .ja-usersetting-form input {
+	margin: 0 2px 0 0;
+}
+
+.tiris .ja-usersetting-form input[type="checkbox"],
+.tiris .ja-usersetting-form input[type="radio"]{
+	padding: 0px;
+	margin: 0px 0px 0px 0px;
+	background: none;
+	border: none;
+}
+
+.tiris .ja-usersetting-form input.button {
+	padding: 4px 8px;
+}
+
+.tiris .ja-usersetting-form-inner {
+	width: 330px;
+}
+
+.tiris .ja-usersetting-row {
+	padding: 7px;
+	border-bottom: 1px solid #ddd;
+}
+
+.tiris .ja-usersetting-options ul, .ja-usersetting-options li {
+	margin: 0;
+	padding: 0;
+}
+
+.tiris .ja-usersetting-actions {
+	margin-top: 10px;
+	margin-left: 5px;
+}
+
+.tiris .ja-zinsec.ja-box-first, .item.article-column.col-first .ja-zintheme {
+	border-left: none;
+}
+
+.tiris .ja-zinsec h2 a, .tiris .ja-zin h4.ja-zintitle a {
+	color: #333;
+}
+
+.tiris .ja-zinlinks a:hover, .tiris .ja-zinsec h2 a:hover, .tiris .ja-zincat h3 a:hover {
+	color: #cf1f18;
+}

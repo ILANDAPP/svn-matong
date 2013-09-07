@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Chat Support</name>
+	<author>Nick</author>
+	<creationDate>Apr 2007</creationDate>
+	<copyright>J.O.O.M Design team</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>nicksonpro@gmail.com</authorEmail>
+	<authorUrl>www.joomdesign.net</authorUrl>
+	<version>1.0.0</version>
+	<description></description>
+	<files>
+		<filename module="mod_chat_support">mod_chat_support.php</filename>
+			<filename module="mod_vm_accordion">License.txt</filename>
+	</files>
+	<images>
+		<filename>images/yahoo1.jpg</filename>
+		<filename>images/yahoooffline1.jpg</filename>
+		<filename>images/yahoo2.jpg</filename>
+		<filename>images/yahoooffline2.jpg</filename>
+		<filename>images/yahoo3.jpg</filename>
+		<filename>images/yahoooffline3.jpg</filename>
+	</images>	
+	<params>
+		<param name="yahooid1" type="text" default="sonnguyen012" label="YahooID" description="Your support YahooID" />
+		<param name="yahootext1" type="text" default="Chat with sonnguyen012" label="Decription" description="The text which display over image." />
+		<param name="yahooid2" type="text" default="-1" label="YahooID" description="Your support YahooID" />
+		<param name="yahootext2" type="text" default="-1" label="Decription" description="The text which display over image." />
+		<param name="yahooid3" type="text" default="-1" label="YahooID" description="Your support YahooID" />
+		<param name="yahootext3" type="text" default="-1" label="Decription" description="The text which display over image." />		
+		<param name="yahootype" type="list" default="-1" label="Display" description="Show or hide YahooIM support image">
+			<option value="-1">Do not display</option>
+			<option value="0">Display</option>
+			
+		</param>
+		<param name="@spacer" type="spacer" default="" label="----------------------" description="" />
+		<param name="skypeid" type="text" default="cuemkid" label="SkypeID" description="Your support SkypeID" />
+		<param name="skypetype" type="list" default="" label="Display Type" description="Show YahooIM support image">
+			<option value="">Do not display</option>
+			<option value="1">Balloon - Chat</option>
+			<option value="2">Balloon - Talk</option>
+			<option value="3">BigClassic - Chat</option>
+			<option value="4">BigClassic - Talk</option>
+			<option value="5">SmallClassic - Chat</option>
+			<option value="6">SmallClassic - Talk</option>
+			<option value="7">SmallIcon - Chat</option>
+			<option value="8">SmallIcon - Talk</option>
+			<option value="9">MediumIcon - Chat</option>
+			<option value="10">MediumIcon - Talk</option>
+		</param>
+	</params>
+</install>

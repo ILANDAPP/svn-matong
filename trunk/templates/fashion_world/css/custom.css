@@ -1,0 +1,40 @@
+/*---------------------------------------------------------------
+# Package - Joomla Template based on Helix Framework   
+# ---------------------------------------------------------------
+# Author - JoomShaper http://www.joomshaper.com
+# Copyright (C) 2010 - 2012 JoomShaper.com. All Rights Reserved.
+# license - PHP files are licensed under  GNU/GPL V2
+# license - CSS  - JS - IMAGE files  are Copyrighted material 
+# Websites: http://www.joomshaper.com
+-----------------------------------------------------------------*/
+
+/*Virtuemart layout*/
+.nssp2.ns2-vm .ns2-inner {border: 2px solid #a3c789;
+padding: 10px;
+background: url(../images/iconitems.png) no-repeat bottom right #fff;
+padding-bottom: 20px;padding-top: 33px;}
+
+.nssp2.ns2-vm .ns2-inner:hover {border: 2px solid #27690c;/* CSS3 Transition: */
+	-moz-transition: border 0.3s, box-shadow 0.4s, top 0.5s, left 0.6s;
+    -webkit-transition: border 0.3s, box-shadow 0.4s, top 0.5s, left 0.6s;
+    }
+.nssp2.ns2-vm .ns2-inner:hover {}
+.ns2-vm-bar {padding-top:5px}
+.nssp2.ns2-vm p.ns2-vm-price {font-size:13px;font-weight:700;margin:5px 0 0 0}
+.nssp2.ns2-vm .ns2-addtocart {float:right}
+
+/* Social Image*/
+.footer_social{opacity:.5}
+.footer_social:hover{opacity:1}
+
+/* Vendor Scroller */
+.ns2-scroller .ns2-art-wrap {padding:0 20px}
+.ns2-scroller .ns2-inner {text-align:center}
+.ns2-scroller img.ns2-image {opacity:.4}
+.ns2-scroller img.ns2-image:hover {opacity:1}
+.ns2-scroller .ns2-art-prev,.ns2-scroller .ns2-art-next{position:absolute;top:50%;margin-top:-21px;text-indent:-9000px;height:43px;width:43px;z-index:999}
+.ns2-scroller .ns2-art-prev{left:-23px;background:url(../images/ns2-prev.png) no-repeat}
+.ns2-scroller .ns2-art-next{right:-23px;background:url(../images/ns2-next.png) no-repeat}
+.ns2-scroller div .ns2-art-next:hover,.ns2-scroller div .ns2-links-next:hover,.ns2-scroller div .ns2-art-prev:hover,.ns2-scroller div .ns2-links-prev:hover{background-position:0 0!important}
+
+/*SP Tab*/

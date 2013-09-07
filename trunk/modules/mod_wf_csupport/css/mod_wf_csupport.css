@@ -1,0 +1,47 @@
+#mod_wf_csupport .i_left
+{
+	margin-top:7px;width:49.5%;float:left;text-align:center;
+}
+#mod_wf_csupport .i_right
+{
+	margin-top:7px;width:49.5%;float:right;text-align:center
+}
+#mod_wf_csupport a
+{
+	padding:2px 0;
+	font-size: 14px;
+}
+#mod_wf_csupport .mxct_hotl,
+#mod_wf_csupport .mxct_tel,
+#mod_wf_csupport .mxct_fax,
+#mod_wf_csupport .mxct_addr,
+#mod_wf_csupport .mxct_mail
+{
+	text-align:left;
+	margin:3px;
+	padding:0 0 0 26px;
+	width:90%;
+	background-position:left center;
+	background-repeat: no-repeat;
+}
+#mod_wf_csupport .mxct_addr
+{
+	background-image:url(../images/addr.gif);
+}
+#mod_wf_csupport .mxct_tel
+{
+	background-image:url(../images/tel.gif);
+	
+}
+#mod_wf_csupport .mxct_hotl
+{
+	background-image:url(../images/hotl.gif) ;
+}
+#mod_wf_csupport .mxct_fax
+{
+	background-image:url(../images/fax.gif) ;
+}
+#mod_wf_csupport .mxct_mail
+{
+	background-image:url(../images/mail.gif);
+}

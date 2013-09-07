@@ -1,0 +1,86 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA Tiris Template for Joomla 2.5
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+#jasdl-mainnav {
+	font-family: "abelregular", Arial, sans-serif;
+	padding-left: 190px;
+}
+
+#jasdl-mainnav li {
+	background: url(../../images/bg-line-nav.gif) 100% 0 repeat-y;
+	padding: 0 9px 0 7px;
+}
+
+#jasdl-mainnav a {
+	color: #a5a5a5;
+	font-size: 116%;
+	font-weight: normal;
+	line-height: 22px;
+	padding: 20px 10px 20px 10px;
+	text-shadow: 0 1px 0 #000;
+	text-transform: uppercase;
+}
+
+#jasdl-mainnav a:hover, #jasdl-mainnav ul li.hover > a { background: url(../../images/arrow-1.png) 50% 100% no-repeat; }
+
+#jasdl-mainnav ul li.haschild.active a {
+	background: url(../../images/arrow-1.png) 50% 100% no-repeat;
+}
+
+#jasdl-mainnav li.active a,
+#jasdl-mainnav li.active a:hover,
+#jasdl-mainnav li.active a:active,
+#jasdl-mainnav li.active a:focus { color: #fff; }
+
+/* Sub Nav ---*/
+#ja-subnav {
+	background: url(../../images/bg-subnav-2.gif) 0 0 repeat-x #1b1b1b;
+	min-height: 18px;
+	padding: 13px 0 7px 190px;
+}
+
+#ja-subnav li {
+	border-right: 1px solid #3d3d3d;
+	margin: 0;
+	padding: 0 15px;
+}
+
+#ja-subnav li.last-item { border-right: none; }
+
+#ja-subnav ul li a { color: #6a6a6a; }
+
+#ja-subnav ul li a:hover { color: #ba1115; }
+
+#ja-subnav ul li.haschild.hover a.haschild { color: #ba1115; }
+
+#ja-subnav ul li.active a.active, #ja-subnav ul li.active a.active:hover, 
+#ja-subnav ul li.active a.active:active, #ja-subnav ul li.active a.active:focus { color: #ba1115; }
+
+/* Sub Nav (lv2) ---*/
+#ja-subnav ul li ul {
+	background: url(../../images/bg-subnav.gif) 0 100% repeat-x #fff;
+	border-bottom: none;
+	color: #666;
+	padding-bottom:5px;
+}
+
+#ja-subnav ul li ul li {
+	border-right: none;
+	border-top: 1px dotted #ccc;
+	padding: 8px 10px;
+}
+
+#ja-subnav ul li ul li a { color:#999; }
+
+#ja-subnav ul li ul li:first-child { border: 0; }
+
+#ja-subnav ul ul li a:hover { color: #ba1115; }
+

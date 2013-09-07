@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Hỗ trợ trực tuyến</name>
+	<author>Pierre</author>
+	<creationDate>20/09/2012</creationDate>
+	<copyright>www.trungtamtinhoc.edu.vn</copyright>
+	<license></license>
+	<authorEmail>info@trungtamtinhoc.edu.vn</authorEmail>
+	<authorUrl>www.trungtamtinhoc.edu.vn</authorUrl>
+	<version>2.1</version>
+	<description>Tạo mục hỗ trợ trực tuyến qua yahoo cho Joomla. Hỗ trợ nhiều nick Yahoo. Multiple Yahoo Nick separated by line break.</description>
+	<files>
+		<filename module="mod_ho_tro_yahoo">mod_ho_tro_yahoo.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>helper.php</filename>
+	</files>
+
+	<params description="Tạo mục hỗ trợ trực tuyến qua yahoo cho Joomla. Mỗi nick yahoo nằm trên 1 dòng với Tên và Mô tả tương ứng. Multiple Yahoo Nick separated by line break.">
+		<param name="yahoos" type="textarea" default="quanaosi" label="Support Nick Yahoo" description="Multiple Yahoo Nick separated by line break" cols="50" rows="4" /> 
+		<param name="names" type="textarea" default="Sale Quan Ao SI" label="Support Name" description="Multiple Yahoo Name separated by line break" cols="50" rows="4" /> 
+		<param name="descriptions" type="textarea" default="Sale support of www.quanaosi.com" label="Support Description" description="Multiple Description separated by line break" cols="50" rows="4" /> 		
+		<param name="align" type="list" default="center" label="Layout align" description="">
+			<option value="center">center</option> 
+			<option value="left">left</option> 
+			<option value="right">right</option>
+		</param>
+		<param name="image" type="list" default="2" label="Yahoo icon type" description="Yahoo icon type">
+			<option value="1">Option 1</option> 
+			<option value="2">Option 2</option> 
+			<option value="14">Option 3</option>
+			<option value="9">Option 4</option>
+			<option value="8">Option 5</option>
+			<option value="13">Option 6</option>
+			<option value="12">Option 7</option>
+			<option value="11">Option 8</option>
+		</param> 
+	</params>
+	<params group="advanced">
+		<param name="cache" type="list" default="0" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="The time before the module is recached" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="" />
+
+	</params>
+</install>

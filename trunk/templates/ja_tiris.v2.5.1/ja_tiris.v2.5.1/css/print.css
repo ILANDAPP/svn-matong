@@ -1,0 +1,58 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA Tiris Template for Joomla 2.5
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+body { color:#7B7B7B; }
+
+/* img */
+img[align="right"] { float: right; margin-left: 10px; margin-bottom: 10px;}
+
+img[align="left"], img.image-left { float: left; margin-right: 10px; margin-bottom: 10px;}
+
+/* article tool */
+div.article-tools {
+    background: url(../images/pattern-grey.gif) repeat scroll 0 0 transparent;
+    font-size: 92%;
+    margin: 10px 0 5px;
+    padding: 2px;
+	color:#999;
+}
+
+body.contentpane ul.actions { margin:0 5px; }
+
+/* typo page */
+body.contentpane .ja-typo-blockct ol {  margin-left:25px; }
+
+.ja-typo-blockct ul li {
+    background: url(../images/bullet.gif) no-repeat scroll 10px 7px transparent;
+    line-height: 160%;
+    margin-bottom: 5px;
+    overflow: hidden;
+    padding-left: 25px;
+	margin-bottom:5px;
+}
+
+a.ja-typo-btn-big span {
+    color:#fff;
+}
+
+body.contentpane a.ja-typo-btn-icn {
+    color: #333333;
+}
+
+body.contentpane a.btn-blue, body.contentpane a.btn-red, body.contentpane a.btn-green, body.contentpane a.btn-orange, body.contentpane a.btn-black, body.contentpane a.ja-typo-btn-sm span { color:#fff; }
+ 
+ul.ja-typo-list li { background:none !important; }
+
+.ja-typo-blockct dl { margin-top:10px; }
+
+.ja-typo-blockct dd { margin-left:15px; padding:5px 0; }
+
+div.ja-moduletable, div.moduletable { position:relative; }

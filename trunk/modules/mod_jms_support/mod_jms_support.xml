@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site"
+	method="upgrade">
+	<name>Jms Support Online</name>
+	<author>Joommasters</author>
+	<creationDate>April 2012</creationDate>
+	<copyright>Joommasters.com</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>hieunt@joommasters.com</authorEmail>
+	<authorUrl>www.joommasters.com</authorUrl>
+	<version>2.0.0</version>
+	<description>The <a href="http://joommasters.com/free-extensions/view.download/4-modules-and-plugins/11-jms-support-online-module-for-joomla-25.html">Jms Support Online</a> module displays online status for SKYPE, MSN, AIM, ICQ, YAHOO and allow user contact with supporter by click on the status. You can check here</description>
+	<files>
+		<filename module="mod_jms_support">mod_jms_support.php</filename>
+		<filename>helper.php</filename>
+		<filename>index.html</filename>
+		<filename>sendmessage.php</filename>
+		<filename>tmpl/default.php</filename>
+		<filename>tmpl/jms_support.css</filename>
+		<filename>tmpl/index.html</filename>
+		<filename>images/index.html</filename>
+		<filename>images/telephone.png</filename>
+		<filename>images/im_yahoo.gif</filename>
+		<filename>images/im_skype.gif</filename>
+		<filename>images/im_msn.gif</filename>
+		<filename>images/im_icq.gif</filename>
+		<filename>images/im_aim.gif</filename>
+		<filename>images/email.jpg</filename>
+		<filename>images/at.gif</filename>
+		<filename>images/skype/index.html</filename>
+		<filename>images/skype/skype_addcontact.gif</filename>
+		<filename>images/skype/skype_callstart.gif</filename>
+		<filename>images/skype/skype_fileupload.gif</filename>
+		<filename>images/skype/skype_info.gif</filename>
+		<filename>images/skype/skype_message.gif</filename>
+		<filename>images/skype/skype_voicemail.gif</filename>
+	</files>
+	<config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field name="supportername" type="radio" default="1" label="Show/hide supporter name" description="Show Supporter name or not">			
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="display" type="radio" default="1" label="With address or not" description="Show status of supporter with address beside or not">			
+					<option value="0">Icon only</option>
+					<option value="1">With address</option>
+				</field>
+				<field name="yahoo" type="radio" default="1" label="Show yahoo status" description="Show/Hide yahoo status of supporter">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="skype" type="radio" default="1" label="Show skype status" description="Show/Hide skype status of supporter">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="aim" type="radio" default="1" label="Show aim status" description="Show/Hide aim status of supporter">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="msn" type="radio" default="1" label="Show msn status" description="Show/Hide msn status of supporter">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="icq" type="radio" default="1" label="Show icq status" description="Show/Hide icq status of supporter">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="tel" type="radio" default="1" label="Show Telephone number" description="Show/Hide Telephone number of supporter">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+				<field name="email" type="radio" default="1" label="Show email address" description="Show/Hide email address of supporter">
+					<option value="0">Hide</option>
+					<option value="1">Show</option>
+				</field>
+			<field name="support1" type="text" default="" label="Support Name 1" description="Name of supporter like admin, sales, or technical ..."></field>
+			<field name="yahoo1" type="text" default="" label="Yahoo ID 1" description="Yahoo ID of supporter 1"></field>
+			<field name="skype1" type="text" default="" label="Skype ID 1" description="Skype ID of supporter 1"></field>
+			<field name="aim1" type="text" default="" label="Aim ID 1" description="Aim ID of supporter 1"></field>
+			<field name="msn1" type="text" default="" label="Msn ID 1" description="Msn ID of supporter 1"></field>
+			<field name="icq1" type="text" default="" label="Icq ID 1" description="Icq ID of supporter 1"></field>
+			<field name="tel1" type="text" default="" label="Telephone number 1" description="Telephone number of supporter 1"></field>
+			<field name="email1" type="text" default="" label="Email address 1" description="Email address of supporter 1"></field>
+		
+			<field name="support2" type="text" default="" label="Support Name 2" description="Name of supporter like admin, sales, or technical ..."></field>
+		<field name="yahoo2" type="text" default="" label="Yahoo ID 2" description="Yahoo ID of supporter 2"></field>
+		<field name="skype2" type="text" default="" label="Skype ID 2" description="Skype ID of supporter 2"></field>
+		<field name="aim2" type="text" default="" label="Aim ID 2" description="Aim ID of supporter 2"></field>
+		<field name="msn2" type="text" default="" label="Msn ID 2" description="Msn ID of supporter 2"></field>
+		<field name="icq2" type="text" default="" label="Icq ID 2" description="Icq ID of supporter 2"></field>
+		<field name="tel2" type="text" default="" label="Telephone number 2" description="Telephone number of supporter 2"></field>
+		<field name="email2" type="text" default="" label="Email address 2" description="Email address of supporter 2"></field>
+		
+		<field name="support3" type="text" default="" label="Support Name 3" description="Name of supporter like admin, sales, or technical ..."></field>
+		<field name="yahoo3" type="text" default="" label="Yahoo ID 3" description="Yahoo ID of supporter 3"></field>
+		<field name="skype3" type="text" default="" label="Skype ID 3" description="Skype ID of supporter 3"></field>
+		<field name="aim3" type="text" default="" label="Aim ID 3" description="Aim ID of supporter 3"></field>
+		<field name="msn3" type="text" default="" label="Msn ID 3" description="Msn ID of supporter 3"></field>
+		<field name="icq3" type="text" default="" label="Icq ID 3" description="Icq ID of supporter 3"></field>
+		<field name="tel3" type="text" default="" label="Telephone number 3" description="Telephone number of supporter 3"></field>
+		<field name="email3" type="text" default="" label="Email address 3" description="Email address of supporter 3"></field>
+		
+		<field name="support4" type="text" default="" label="Support Name 4" description="Name of supporter like admin, sales, or technical ..."></field>
+		<field name="yahoo4" type="text" default="" label="Yahoo ID 4" description="Yahoo ID of supporter 4"></field>
+		<field name="skype4" type="text" default="" label="Skype ID 4" description="Skype ID of supporter 4"></field>
+		<field name="aim4" type="text" default="" label="Aim ID 4" description="Aim ID of supporter 4"></field>
+		<field name="msn4" type="text" default="" label="Msn ID 4" description="Msn ID of supporter 4"></field>
+		<field name="icq4" type="text" default="" label="Icq ID 4" description="Icq ID of supporter 4"></field>
+		<field name="tel4" type="text" default="" label="Telephone number 1" description="Telephone number of supporter 4"></field>
+		<field name="email4" type="text" default="" label="Email address 1" description="Email address of supporter 4"></field>
+		
+		<field name="support5" type="text" default="" label="Support Name 5" description="Name of supporter like admin, sales, or technical ..."></field>
+		<field name="yahoo5" type="text" default="" label="Yahoo ID 5" description="Yahoo ID of supporter 5"></field>
+		<field name="skype5" type="text" default="" label="Skype ID 5" description="Skype ID of supporter 5"></field>
+		<field name="aim5" type="text" default="" label="Aim ID 5" description="Aim ID of supporter 5"></field>
+		<field name="msn5" type="text" default="" label="Msn ID 5" description="Msn ID of supporter 5"></field>
+		<field name="icq5" type="text" default="" label="Icq ID 5" description="Icq ID of supporter 5"></field>
+		<field name="tel5" type="text" default="" label="Telephone number 5" description="Telephone number of supporter 5"></field>
+		<field name="email5" type="text" default="" label="Email address 5" description="Email address of supporter 5"></field>
+		
+		<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+			</fieldset>
+		</fields>
+	</config>
+</extension>

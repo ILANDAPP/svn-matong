@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install version="1.5" type="module">
+   <name>Facebook Fan Page Widget by TickWidget</name>
+   <author>TickWidget Team</author>
+   <creationDate>March 2012</creationDate>
+   <copyright>(C) 2012 TicketMy. All rights reserved.</copyright>
+   <license>GNU/GPL</license>
+   <authorEmail>steve@bumpin.com</authorEmail>
+   <authorUrl>www.ticketmy.com/widgets/fb_fan_page.php</authorUrl>
+   <version>1.1</version>
+   <description>
+		Most popular web widget on Joomla, Make your website beautiful and engaging by installing Facebook Fan Page Widget. The Facebook application enables visitors to view your fanpage or like your page on Facebook within your web page.
+    You can resize and customize your widget according to your blog theme. For customization get your FREE BumpIn Id by signing up at mortal.bumpin.com
+</description>
+   <files>
+       <filename module="mod_fb_fan_page_widget_by_tickwidget">mod_fb_fan_page_widget_by_tickwidget.php</filename>
+       <filename>index.html</filename>
+   </files>
+   <config>
+		<fields name="params">
+			<fieldset name="basic">
+				<field
+					name="tickwidget_id"
+					type="text"
+					
+					label="Bumpin Id"
+					description="To customize your widget get your BumpIn Id from mortal.bumpin.com/joomla " />
+					
+			</fieldset>
+		</fields>
+		
+	</config>
+</install>

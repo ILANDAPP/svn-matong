@@ -1,0 +1,32 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA Tiris Template for Joomla 2.5
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+/* COMMON STYLE
+--------------------------------------------------------- */
+body#bd {
+	background-image: url(../images/bg-body.png);
+	background-position: center top;
+}
+
+/* Logo Image ---*/
+h1.logo a {
+	background-image: url(../images/logo.png);
+}
+
+#ja-botsl div.moduletable-copyright {
+	background-image: url(../images/logo-2.png);
+}
+
+/* sidenews ---*/
+.ja-sidenews { border:none !important; background: url(../images/bg-sidenew.png) 0 0 no-repeat; padding:17px 5px 5px 5px;  }
+
+.ja-slidenews-cover { width: 289px !important; left:5px !important; bottom: 5px !important }

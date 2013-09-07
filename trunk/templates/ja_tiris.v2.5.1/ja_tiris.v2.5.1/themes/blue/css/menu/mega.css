@@ -1,0 +1,41 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA Tiris Template for Joomla 2.5
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+
+.ja-megamenu ul.level0 li.haschild-over a.over { color: #454545; }
+ 
+
+/* lv - 1 and below
+-----------------------------------*/
+/* Styling ---*/
+.ja-megamenu ul.level1 li.over a.mega , .ja-megamenu ul.level1 li.haschild-over a.mega {
+	color: #53aeaf;
+	background-image: url(../../images/bullet-2.png) 
+}
+
+.ja-megamenu ul.level1 li.over .level2 a.mega:hover , .ja-megamenu ul.level1 li.haschild-over .level2 a.mega:hover {
+	color: #53aeaf;
+	background-image: url(../../images/bullet-2.png) 
+}
+
+ /* CHILD CONTENT
+-----------------------------------*/
+.ja-megamenu .childcontent-inner {
+	background-image: url(../../images/bg-subnav.gif);
+}
+
+.ja-megamenu ul.level1 li.active a.active {
+    color: #53aeaf;
+}
+
+.ja-megamenu ul.level1 .level2 li.active a.active {
+    color: #53aeaf;
+}
