@@ -1,0 +1,56 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Fmc Likebox</name>
+	<author>Jonathan Karipios</author>
+    <creationDate>June 2012</creationDate>
+	<copyright>Copyright (C) 2012. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+    <authoremail>info@fmcwebdesign.com</authoremail>
+    <authorurl>http://www.js.fmcwebdesign.com/</authorurl>
+	<version>1.0</version>
+     <description><![CDATA[Fmc Facebook LikeBox a facebook fanpage/profile/group box to display your fans on your joomla Site! ]]></description>
+	<files>
+      <filename module="mod_fmcbox">mod_fmcbox.php</filename>
+      <filename>mod_fmcbox.xml</filename>
+      <filename>index.html</filename>
+      <filename>helper.php</filename>
+      <folder>tmpl</folder>	 
+	</files>	
+    <params>
+        <param name="link_to_page" type="text" default="" label="FB Page Link" description="Here input the link of the facebook page or other you want to show in the likebox ex. http://www.facebook.com/joomla " />
+		<param name="boxwidth" type="text" default="300" label="Width" description="Width" />
+		<param name="boxheight" type="text" default="550" label="Height" description="Height" />
+		<param name="fbfans" type="list" default="1" label="Show Fans" description="Show Fans Thumbs or not ">
+            <option value="1">Show</option>
+            <option value="2">Hide</option>
+        </param> 
+		<param name="include_stream" type="list" default="1" label="Include Stream" description="Include or not the stream of latest posts from your Facebook Page.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="boxcolor" type="list" default="1" label="Color" description="Color chooser from facebook api dark or light">
+            <option value="1">Light</option>
+            <option value="2">Dark</option>
+        </param> 
+		<param name="fbheader" type="list" default="2" label="FanBox Header" description="Show Header Image for find us of Like box if fans or stream is enabled">
+            <option value="2">Show</option>
+			<option value="1">Hide</option>            
+        </param>		
+		 <param name="fbborder" type="text" default="000000" label="Box Border Color" description="Put the border color in hex ex 000000 or ffffff without the #" />
+    </params>
+	<params group="advanced">
+	 <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix for the CSS class of the module." />
+		<param name="unique_id" type="text" default="" label="Unique ID" description="Unique ID for this module." />
+		<param name="debug" type="list" default="0" label="Debug" description="Turn debug function on.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="cache" type="list" default="1" label="Caching" description="Selection of cache of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+		<param name="cache_time" type="text" default="900" label="Cache Time" description="Time before the module is recached" />
+	</params>
+	
+</install>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<metadata>
+	<layout title="Google Layout">
+		<message>
+			<![CDATA[STANDARD GOOGLE LAYOUT DESC]]>
+		</message>
+	</layout>
+		
+	<fields
+		name="request"
+		addfieldpath="/administrator/components/com_google/elements"
+	>
+		<fieldset name="request">
+			<field
+				name="id"
+				type="google"
+				label="Google"
+				description="A Google"
+			/>
+		</fieldset>
+	</fields>
+	
+</metadata>

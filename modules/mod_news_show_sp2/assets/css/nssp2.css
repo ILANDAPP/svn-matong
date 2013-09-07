@@ -1,0 +1,97 @@
+/*------------------------------------------------------------------------
+# News Show SP2 - News display/Slider module by JoomShaper.com
+# ------------------------------------------------------------------------
+# Author    JoomShaper http://www.joomshaper.com
+# Copyright (C) 2010 - 2012 JoomShaper.com. All Rights Reserved.
+# @license - GNU/GPL V2 for PHP files. CSS / JS are Copyrighted Commercial
+# Websites: http://www.joomshaper.com
+-------------------------------------------------------------------------*/
+h4.ns2-title {font-size:100%;font-weight:bold;margin-top: 10px;}
+a.ns2-readmore span,span.ns2-hits,a.ns2-comments {margin:0 5px 0 0;font-size:0.9em}
+a.ns2-readmore span {background:url(../images/more.png) no-repeat 0 0;padding:0 0 0 13px}
+span.ns2-hits {color:#666666;background:url(../images/hits.png) no-repeat 0 0;padding:0 0 0 14px}
+a.ns2-comments {background:url(../images/comments.png) no-repeat 0 0;padding:0 0 0 18px}
+
+/*Article tools*/
+div.ns2-tools{color:#999;font-size:0.9em}
+div.ns2-tools span {margin:0 5px 0 0}
+div.ns2-author,
+div.ns2-created,
+div.ns2-category {display:inline}
+/*VM layout*/
+.ns2-inner,.ns2-vm-bar{text-align:center;}
+.ns2-row{margin-bottom:10px}
+.ns2-image{border:1px solid #ccc;
+padding:1px;}
+.nssp2.ns2-vm p.ns2-vm-price {font-size:13px;font-weight:700;color:#ff0000}
+.nssp2.ns2-vm .ns2-addtocart {}
+/*Rating*/
+div.ns2-rating{height:16px;white-space:nowrap;margin:5px 0 0}
+div.ns2-rating-bar,div.ns2-rating-bar div{height:16px;background-image:url(../images/transparent_star.png);background-repeat:repeat-x}
+div.ns2-rating-bar{width:80px;overflow:hidden;background-position:0 0}
+div.ns2-rating-bar div{background-position:0 -16px;display:block}
+
+/*Newly added*/
+div.nssp2 .flt-left {float:left}
+div.nssp2 .col-1 {}
+div.nssp2 .col-2 {width:50%}
+div.nssp2 .col-3 {margin-left: 15px;
+margin-right: 16px;
+width: 29%;
+margin-bottom: 23px;}
+	#ns2-116 .ns2-art-pages{
+	height:auto!important;}
+div.nssp2 .col-4 {width: 24%;
+margin-bottom: 14px;
+margin-right: 5px;
+margin-left: 2px;}
+div.nssp2 .col-5 {width:20%}
+div.nssp2 .col-6 {width:16.666%}
+div.nssp2 .col-7 {width:14.256%}
+div.nssp2 .col-8 {width:12.5%}
+div.nssp2 .col-9 {width:11.111%}
+div.nssp2 .col-10 {width:10%}
+
+/*Animation Area*/
+div.ns2-art-pages, div.ns2-links-pages {overflow:hidden;position:relative}
+div.ns2-page {overflow:hidden;padding-right:5px}
+
+div .ns2-art-controllers, div .ns2-links-controllers {float:right}
+div .ns2-art-pagination, div .ns2-links-pagination{float:left;margin:0 10px}
+			
+	div .ns2-art-prev, div .ns2-links-prev,
+	div .ns2-art-play, div .ns2-links-play,
+	div .ns2-art-pause, div .ns2-links-pause,
+	div .ns2-art-next, div .ns2-links-next,
+	div .ns2-art-pagination span, div .ns2-links-pagination span{
+		background-image:url(../images/nav-buttons.png);
+		background-repeat:no-repeat;
+		width:8px;
+		height:9px;
+		float:left;cursor:pointer;
+		text-indent:-999em;
+		margin:0 2px;
+	}
+	
+	div .ns2-art-prev, 
+	div .ns2-links-prev {background-position:0 0}
+	div .ns2-art-prev:hover, 
+	div .ns2-links-prev:hover {background-position:0 -9px}
+	div .ns2-art-next, 
+	div .ns2-links-next {background-position:-8px 0}
+	div .ns2-art-next:hover, 
+	div .ns2-links-next:hover {background-position:-8px -9px}
+	div .ns2-art-play, 
+	div .ns2-links-play {background-position:-24px 0}
+	div .ns2-art-play:hover, 
+	div .ns2-links-play:hover {background-position:-24px -9px}
+	div .ns2-art-pause, 
+	div .ns2-links-pause {background-position:-32px 0}
+	div .ns2-art-pause:hover, 
+	div .ns2-links-pause:hover {background-position:-32px -9px}
+	div .ns2-art-pagination span, 
+	div .ns2-links-pagination span{background-position:-16px 0}
+	div .ns2-art-pagination span:hover, 
+	div .ns2-links-pagination span:hover, 
+	div .ns2-art-pagination span.active, 
+	div .ns2-links-pagination span.active{background-position:-16px -10px}

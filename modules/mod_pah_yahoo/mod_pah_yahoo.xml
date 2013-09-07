@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Hỗ trợ Yahoo</name>
+	<author>PAH design</author>
+	<creationDate>20/07/2010</creationDate>
+	<copyright>www.phananhhuy.vn</copyright>
+	<license></license>
+	<authorEmail>support@phananhhuy.vn</authorEmail>
+	<authorUrl>www.thietkewebtop.com</authorUrl>
+	<version>2.1</version>
+	<description>
+	Mod hỗ trợ Yahoo | 
+	Phát triển bởi: Công Ty TNHH Tin Học Phan Anh Huy |
+	Website: www.thietkewebtop.com </description>
+	<files>
+		<filename module="mod_pah_yahoo">mod_pah_yahoo.php</filename>
+        <filename>index.html</filename>
+        <filename>tmpl/default.php</filename>
+        <filename>tmpl/index.html</filename>
+        <filename>helper.php</filename>
+	</files>
+
+	<params description="Hỗ trợ &gt;&gt; &lt;a href&#61;&quot;http:&#47;&#47;www.phananhhuy&#46;vn&#47;&quot;&gt; Thiết kế web&lt;&#47;a&gt;">
+		<param name="yahoos" type="textarea" default="phanlongsa" label="Yahoos" description="" cols="50" rows="4" /> 
+		<param name="names" type="textarea" default="Mr Sa" label="Names" description="" cols="50" rows="4" /> 
+		<param name="descriptions" type="textarea" default="" label="Description" description="" cols="50" rows="4" /> 		
+		<param name="website" type="text" size="50" default="www.thietkewebtop.com" label="Website" description="" /> 
+		<param name="align" type="list" default="center" label="Layout align" description="">
+			<option value="center">center</option> 
+			<option value="left">left</option> 
+			<option value="right">right</option>
+		</param>
+		<param name="image" type="list" default="1" label="Image" description="">
+			<option value="1">1</option> 
+			<option value="2">2</option> 
+			<option value="14">14</option>
+			<option value="9">9</option>
+			<option value="8">8</option>
+			<option value="13">13</option>
+			<option value="12">12</option>
+			<option value="11">11</option>
+		</param> 
+		<param name="vspace" type="text" default="5" label="Vspace" description="" size="2" /> 
+	</params>
+</install>

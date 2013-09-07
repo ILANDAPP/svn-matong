@@ -1,0 +1,129 @@
+/**
+ * ------------------------------------------------------------------------
+ * JA Tiris Template for Joomla 2.5
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+ */
+
+ @import url(../fonts/abel/stylesheet.css);
+/* COMMON STYLE
+--------------------------------------------------------- */
+body.contentpane {
+	font-size: 10pt;
+	font-family: Arial, sans-serif;
+}
+
+body.contentpane a { color: #cf1f18; text-decoration: none; }
+
+body.contentpanea:hover, body.contentpane a:active, body.contentpane a:focus { text-decoration: underline; }
+
+body.contentpane h2 {
+	 font-family: "abelregular",Arial,sans-serif;
+    line-height: 1.1;
+    margin: 0;
+    padding: 0;
+    color: #222;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+body.contentpane img.img-border {
+	border: 1px solid #E5E5E5 !important;
+	padding: 8px !important;
+}
+
+body.contentpane img[align="left"], body.contentpane img.image-left {
+    float: left;
+    margin-bottom: 10px;
+    margin-right: 10px;
+}
+
+body.contentpane img[align="right"], body.contentpane img.image-right {
+    float: right;
+    margin-bottom: 10px;
+    margin-left: 10px;
+}
+
+body.contentpane div.article-tools {
+	background: url("../images/pattern-grey.gif") repeat 0 0;
+	font-size: 92%;
+	margin: 10px 0px 5px;
+	padding: 2px;
+}
+
+body.contentpane dl.article-info { color: #999; text-transform: none; width: 74%;}
+
+body.contentpane ul.actions li {
+	background: none;
+	display: inline;
+	line-height: 1;
+	margin: 0;
+	padding: 0;
+}
+
+body.contentpane dd.category-name a { font-weight: bold; }
+
+body.contentpane dd.create, body.contentpane dd.createdby, body.contentpane dd.published {
+	background: url("../images/hoz-sep.gif") no-repeat scroll right center;
+	padding-right: 10px !important;
+}
+body.contentpane #login-form p label  {
+	 color: #555555;
+    display: block;
+    font-size: 10px;
+    margin-bottom: 3px;
+}
+
+body.contentpane ul.actions {
+	margin: 0px;
+	padding: 2px;
+}
+
+body.contentpane #login-form p .txtbox {
+	 border: 1px solid #DDDDDD;
+    padding: 5px;
+}
+
+body.contentpane #login-form input.button, 
+#mailtoForm button.button {
+	background: #3A3A3A;
+	color: #FFFFFF;
+	font-size: 100%;
+	margin-right: 5px;
+	padding: 6px 10px;
+	overflow: visible;
+	border: none;
+}
+
+body.contentpane #login-form input.button:hover,
+#mailtoForm button.button:hover {
+	  background: #CF1F18;
+	  color: #FFFFFF;
+}
+
+body.contentpane #login-form ul li { padding: 0px 5px; }
+
+body.contentpane #login-form ul li a { color: #323232; text-decoration: underline; font-size: 85%; }
+
+body.contentpane #login-form ul li a:hover,
+body.contentpane #login-form ul li a:focus { color: #CF1F18; }
+
+body.contentpane .formelm label {
+	color: #555555;
+    font-size: 92%;
+}
+
+body.contentpane .formelm input.inputbox {
+	border: 1px solid #DDDDDD;
+	padding: 5px;
+}
+
+body.contentpane div.itemAuthorLatest li, body.contentpane div.itemRelated li {
+	background: url(../images/bullet.gif) left center no-repeat;
+	padding-left: 15px;
+}

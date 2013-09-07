@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<!-- Name of the Module -->
+	<name>WF Online Customer Support</name> 
+	<!-- Name of the Author -->
+	<author></author> 
+	<!-- Version Date of the Module -->
+	<creationDate>April 11, 2011</creationDate> 
+	<!-- Copyright information -->
+	<copyright></copyright> 
+	<!-- License Information -->
+	<license>GPL 2.0</license> 
+	<!-- Author's email address -->
+	<authorEmail></authorEmail> 
+	<!-- Author's website -->
+	<authorUrl></authorUrl> 
+	<!-- Module version number -->
+	<version>1.1.0</version> 
+	<!-- Description of what the module does -->
+	<description>Display chat icon in your website for Yahoo! Messenger and Skype with status (online or offline )for your id , and lets people contact you.
+	</description>
+	<!-- Listing of all files that should be installed for the module to function -->
+	<files>
+	<!-- The "module" attribute signifies that this is the main controller file -->
+		<filename module="mod_wf_csupport">mod_wf_csupport.php</filename>
+		<filename>getstatus.php</filename>
+		<filename>index.html</filename>
+		<folder>images</folder>
+		<folder>css</folder>
+	</files>
+	
+	<!-- Optional parameters -->
+	<params>
+			<param name="moduleclass_sfx" type="text" size="40"  default="" label="Module Class Suffix" description="A Suffix to be applied the CSS class of this module, this allowa indivdual nodule styling" />
+			<param name="@spacer" type="spacer" default="" label="" description="" />
+			<param name="pretext" type="text" size="40" default="" label="Pre Text" description="Text Before Contact" />	
+			<param name="addr" type="text" size="40" default="" label="Address" description="Address" />	
+			<param name="tel1" type="text" size="40" default="" label="Telphone 1" description="Telphone Number" />	
+			<param name="tel2" type="text" size="40" default="" label="Telphone 2" description="Telphone Number" />	
+			<param name="fax" type="text" size="40" default="" label="Fax" description="Fax Number" />	
+			<param name="hotl1" type="text" size="40" default="" label="Hotline 1" description="Hotline Number" />	
+			<param name="hotl2" type="text" size="40" default="" label="Hotline 2" description="Hotline Number" />	
+			<param name="mail" type="text" size="40" default="" label="Email" description="Email Contact" />	
+			
+			<param name="ym_type" type="list" default="custom_02" label="YM! Type" description="Yahoo! Messenger Type" >	
+				<option value="custom_01">Custom 1</option>
+				<option value="custom_02">Custom 2</option>
+				<option value="custom_03">Custom 3</option>
+				<option value="custom_04">Custom 4</option>
+				<option value="01">01</option>
+				<option value="02">02</option>
+				<option value="03">03</option>
+				<option value="04">04</option>
+				<option value="05">05</option>
+				<option value="06">06</option>
+				<option value="07">07</option>
+				<option value="08">08</option>
+				<option value="09">09</option>
+				<option value="10">02</option>
+				<option value="11">11</option>
+				<option value="12">12</option>
+				<option value="13">13</option>
+				<option value="14">14</option>
+				<option value="15">15</option>
+				<option value="16">16</option>
+				<option value="17">17</option>
+				<option value="18">18</option>
+				<option value="19">19</option>
+				<option value="20">20</option>
+				<option value="21">21</option>
+				<option value="22">22</option>
+				<option value="23">23</option>
+				<option value="24">24</option>
+			</param>
+			<param name="sk_type" type="list" size="40" default="custom_02" label="Skype! Type" description="Skype! Icon Type" >	
+				<option value="custom_01">Custom 1</option>
+				<option value="custom_02">Custom 2</option>
+				<option value="custom_03">Custom 3</option>
+				<option value="custom_04">Custom 4</option>
+				<option value="balloon">Balloon</option>
+				<option value="bigclassic">Bigclassic</option>
+			</param>
+			
+			<param name="ncolumn" type="list" default="1" label="Column">
+			  <option value="1">1</option>
+			  <option value="2">2</option>
+			</param>
+			<param name="server" type="radio" default="1" label="Remote Images">
+			  <option value="1">Yes</option>
+			  <option value="0">No</option>
+			</param>
+			<param name="csinfo1" type="text" size="70" default="yahooid1&#124;skypeid1&#124;Name1&#124;Mobile number1" label="CS Infos 1" description="Customer support Info" />
+			<param name="csinfo2" type="text" size="70"  default="" label="CS Infos 2" description="Customer support Info" />
+			<param name="csinfo3" type="text" size="70"  default="" label="CS Infos 3" description="Customer support Info" />
+			<param name="csinfo4" type="text" size="70"  default="" label="CS Infos 4" description="Customer support Info" />
+			<param name="csinfo5" type="text" size="70"  default="" label="CS Infos 5" description="Customer support Info" />
+			<param name="csinfo6" type="text" size="70"  default="" label="CS Infos 6" description="Customer support Info" />
+			<param name="csinfo7" type="text" size="70"  default="" label="CS Infos 7" description="Customer support Info" />
+			<param name="csinfo8" type="text" size="70"  default="" label="CS Infos 8" description="Customer support Info" />
+			<param name="csinfo9" type="text" size="70"  default="" label="CS Infos 9" description="Customer support Info" />
+			<param name="csinfo10" type="text" size="70" default="" label="CS Infos 10" description="Customer support Info" />
+	</params>
+	
+	<params group="advanced">
+		
+		<param name="cache" type="list" default="1" label="Caching" description="Select whether to cache the content of this module">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+				
+		
+	</params>
+
+</install>

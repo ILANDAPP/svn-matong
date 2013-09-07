@@ -1,0 +1,97 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA Tiris Template for Joomla 2.5
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+/* Son of Suckerfish Dropdowns
+---------------------------------------------------------
+Originally developed by Patrick Griffiths and Dan Webb
+http://www.htmldog.com/articles/suckerfish/dropdowns/
+---------------------------------------------------------
+NOTE: After a deep research, we decide to divide this
+CSS into 2 parts. The first part will define the layout.
+The second part will define the visual look for this menu.
+---------------------------------------------------------*/
+/* STYLING THE MENU
+-----------------------------------*/
+/* 1st level */
+#ja-cssmenu { padding-left: 190px; }
+
+#ja-cssmenu li { font-family: "abelregular", Arial, sans-serif; }
+
+#ja-cssmenu li {
+	background: url(../../images/bg-line-nav.gif) 100% 0 repeat-y;
+	padding: 0 9px 0 7px;
+}
+
+#ja-cssmenu li a {
+	color: #a5a5a5;
+	font-size: 116%;
+	font-weight: normal;
+	line-height: 20px;
+	padding: 10px 0 0 0;
+	text-shadow: 0 1px 0 #000;
+	text-transform: uppercase;
+}
+
+span.menu-title { line-height: 22px; padding: 10px 10px 20px 10px; }
+
+#ja-cssmenu li a.active,
+#ja-cssmenu li a.active:hover,
+#ja-cssmenu li a.active:active,
+#ja-cssmenu li a.active:focus { color: #fff; }
+
+#ja-cssmenu li a:hover, #ja-cssmenu li a:active, 
+#ja-cssmenu li a:focus, #ja-cssmenu li a.sfhover { color: #fff; }
+
+#ja-cssmenu li.havechildsfhover a.sfhover { color: #454545; text-shadow: none; }
+
+#ja-cssmenu li.havechildsfhover a span.menu-title { background: #fff; }
+
+/* 2nd level and above */
+#ja-cssmenu li ul {
+	background: url(../../images/bg-subnav.gif) 0 100% repeat-x #fdfdfd;
+	border-bottom: none;
+	border-top: 0;
+	color: #666;
+	padding-bottom:5px;
+}
+
+#ja-cssmenu li li {
+	border-top: 1px dotted #ccc;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+#ja-cssmenu li li.first-item {
+	border-top: none;
+}
+#ja-cssmenu li li a {
+	border: 0;
+	color: #999 !important;
+	font-size: 100%;
+	line-height: normal;
+	padding: 8px 0 8px 10px;
+	text-shadow: none;
+	text-transform: none;
+	width: auto;
+}
+
+#ja-cssmenu li li span.menu-title {
+	background: none !important;
+	line-height: normal;
+	padding: 0;
+}
+
+#ja-cssmenu li ul li { background: none; }
+
+#ja-cssmenu li ul a:hover, #ja-cssmenu li ul a:active, #ja-cssmenu li ul a:focus, #ja-cssmenu ul li:hover, #ja-cssmenu ul li.sfhover, #ja-cssmenu ul li.havesubchildsfhover, #ja-cssmenu ul li.havesubchild-activesfhover, #ja-cssmenu ul ul li:hover, #ja-cssmenu ul ul li.sfhover, #ja-cssmenu ul ul li.havesubchildsfhover, #ja-cssmenu ul ul li.havesubchild-activesfhover, #ja-cssmenu ul li.havesubchildsfhover a.sfhover { color: #ba1115 !important; }
+
+span.has-image { padding-bottom: 2px; padding-top: 2px; }
+
+#ja-cssmenu ul li a.active, #ja-cssmenu ul li a.active:hover, #ja-cssmenu ul li a.active:active, #ja-cssmenu ul li a.active:focus { font-weight: normal; color: #ba1115 !important; }

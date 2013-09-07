@@ -1,0 +1,51 @@
+/*
+ * ------------------------------------------------------------------------
+ * JA Tiris Template for Joomla 2.5
+ * ------------------------------------------------------------------------
+ * Copyright (C) 2004-2011 J.O.O.M Solutions Co., Ltd. All Rights Reserved.
+ * @license - Copyrighted Commercial Software
+ * Author: J.O.O.M Solutions Co., Ltd
+ * Websites:  http://www.joomlart.com -  http://www.joomlancers.com
+ * This file may not be redistributed in whole or significant part.
+ * ------------------------------------------------------------------------
+*/
+/* content slider
+--------------------------------------------------------- */
+#ja-botsl2 .ja-box { float: none; overflow: visible; }
+
+#ja-botsl2 div.ja-moduletable { margin: 0; padding: 0; }
+
+.ja-contentslider-center-wrap {
+	border-top: 1px solid #e6e6e6;
+	padding: 10px 30px;
+}
+ 
+.ja-contentslide-right-img {
+	background: url(../images/btn-next.png) 0 0 no-repeat;
+	cursor: pointer;
+	height: 23px;
+	position: absolute;
+	right: 0;
+	bottom: 30px;
+	width: 23px;
+	z-index: 5;
+	overflow:hidden;
+}
+
+.ja-contentslide-right-img:hover , .ja-contentslide-left-img:hover { background-position: 0 -23px; }
+
+.ja-contentslide-left-img {
+	background: url(../images/btn-prev.png) 0 0 no-repeat;
+	cursor: pointer;
+	height: 23px;
+	left: 0;
+	position: absolute;
+	bottom: 30px;
+	width: 23px;
+	z-index: 5;
+	overflow:hidden;
+}
+
+.ja-contentslider { position:relative; }
+
+.ja-contentslider-center .content { padding: 0 4px; }

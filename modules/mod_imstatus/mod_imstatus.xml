@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<extension type="module" version="2.5" client="site" method="upgrade">
+  <name>IM Status</name>
+  <author>Ladikid SoftDev Lab</author>
+  <creationDate>2012-04-15</creationDate>
+  <copyright>All Right Reserved by Ladikid SoftDev Lab 2012</copyright>
+  <license>GPL/GNU</license>
+  <authorEmail>ladikid@gmail.com</authorEmail>
+  <authorUrl>http://www.ladikid.com</authorUrl>
+  <version>1.0.5</version>
+  <description>Instant Messenger Status for Joomla 2.5! Is a module that can displaying  multiple Yahoo IDs with custom image for online/offline Yahoo Messenger Status, GTalk and Live Messenger.</description>
+  <files>
+    <filename module="mod_imstatus">mod_imstatus.php</filename>
+	<filename>index.html</filename>
+	<folder>tmpl</folder>
+	<folder>custimage</folder>
+  </files>
+  <config>
+    <fields name="params">
+	  <fieldset name="basic">
+		<field name="display" type="list" default="0" label="Display Type" description="Status displayed style." >
+		  <option value="0">Status Only</option>
+		  <option value="1">Title : Status</option>
+		  <option value="2">Title above of Status</option>
+		  <option value="3">Title below of Status</option>
+		</field>
+	    <field name="align" type="list" default="left" label="Alignment" description="Status displayed alignment." >
+		  <option value="left">Left</option>
+		  <option value="center">Center</option>
+		  <option value="right">Right</option>
+		</field>
+		<field name="statcolumn" type="text" default="1" label="Displayed Column" description="Status column layout" />
+	  </fieldset>
+	  <fieldset name="yahoo" label="Yahoo Status Options">
+	    <field name="yidtext" type="textarea" default="" cols="30" rows="10" label="Yahoo ID and Text" description="Type here using the format: {Yahoo ID}|{Label}. ex: yahooid|Customer Service. Use (;) 'semicolon' to multiple assignment." />
+		<field name="ystyle" type="list" default="0" label="Select Style" description="" >
+		  <option value="0">Default Image</option>
+		  <option value="1">Current Avatar</option>
+		  <option value="2">Custom Image</option>
+		  <option value="3">Own Image</option>
+		  <option value="4">Custom Text</option>
+		</field>
+		<field name="defimg" type="list" default="0" label="Default Image" description="Default Yahoo Image Status" >
+<option value="0">Status 1</option><option value="1">Status 2</option><option value="2">Status 3</option>
+		  <option value="4">Status 5</option><option value="5">Status 6</option><option value="6">Status 7</option><option value="7">Status 8</option>
+		  <option value="3">Status 4</option><option value="8">Status 9</option><option value="9">Status 10</option><option value="10">Status 11</option>
+		  <option value="11">Status 12</option><option value="12">Status 13</option><option value="13">Status 14</option><option value="14">Status 15</option>
+		  <option value="15">Status 16</option><option value="16">Status 17</option>
+		</field>
+		<field name="custimg" type="list" default="0" label="Custom Image" description="Custom Image Status" >
+		  <option value="0">Status 1</option><option value="1">Status 2</option><option value="2">Status 3</option><option value="3">Status 4</option>
+		  <option value="4">Status 5</option><option value="5">Status 6</option><option value="6">Status 7</option><option value="7">Status 8</option>
+		  <option value="8">Status 9</option><option value="9">Status 10</option><option value="10">Status 11</option><option value="11">Status 12</option>
+		  <option value="12">Status 13</option><option value="13">Status 14</option><option value="14">Status 15</option><option value="15">Status 16</option>
+		  <option value="16">Status 17</option><option value="17">Status 18</option><option value="18">Status 19</option><option value="20">Status 21</option>
+		  <option value="21">Status 22</option><option value="22">Status 23</option><option value="23">Status 24</option><option value="24">Status 25</option>
+		  <option value="25">Status 26</option><option value="26">Status 27</option><option value="27">Status 28</option><option value="28">Status 29</option>
+		</field>
+		<field type="spacer" label="Own Image" />
+		<field name="ownimgon" type="media" default="" size="30" label="Online" description="Own image online" />
+		<field name="ownimgof" type="media" default="" size="30" label="Offline" description="Own image offline" />
+		<field type="spacer" label="Custom Text" />
+		<field name="txton" type="text" default="" size="53" label="Online" description="Custom online text" />
+		<field name="txtof" type="text" default="" size="53" label="Offline" description="Custom offline text" />
+	  </fieldset>
+	  <fieldset name="otherim" label="Other IM Options">
+	    <field name="addstat" type="radio" default="0" label="Additional Status" description="Show/hide Additional Status." >
+		  <option value="0">Show</option>
+		  <option value="1">Hide</option>
+		</field>
+	    <field type="spacer" label="&lt;b&gt;Google Talk&lt;/b&gt;" />
+		<field name="gtalkimg" type="list" default="0" label="Status Image" description="GTalk Status Image">
+		  <option value="0">Status 1</option><option value="1">Status 2</option><option value="2">Status 3</option><option value="3">Status 4</option>
+		  <option value="4">Status 5</option><option value="5">Status 6</option><option value="6">Status 7</option><option value="7">Status 8</option>
+		  <option value="8">Status 9</option><option value="9">Status 10</option><option value="10">Status 11</option><option value="11">Status 12</option>
+		  <option value="12">Status 13</option><option value="13">Status 14</option><option value="14">Status 15</option><option value="15">Status 16</option>
+		  <option value="16">Status 17</option><option value="17">Status 18</option><option value="18">Status 19</option><option value="20">Status 21</option>
+		  <option value="21">Status 22</option><option value="22">Status 23</option><option value="23">Status 24</option><option value="24">Status 25</option>
+		  <option value="25">Status 26</option><option value="26">Status 27</option><option value="27">Status 28</option><option value="28">Status 29</option>
+		</field>
+		<field name="gtalk1lbl" type="text" default="" size="53" label="Label GTalk 1" description="GTalk 1 label" />
+	    <field name="gtalk1" type="textarea" filter="raw" default="" cols="30" rows="3" label="GTalk 1" description="GTalk badge 1 encode script." />
+		<field name="gtalk2lbl" type="text" default="" size="53" label="Label GTalk 2" description="GTalk 2 label" />
+	    <field name="gtalk2" type="textarea" filter="raw" default="" cols="30" rows="3" label="GTalk 2" description="GTalk badge 2 encode script." />
+		<field name="gtalk3lbl" type="text" default="" size="53" label="Label GTalk 3" description="GTalk 3 label" />
+	    <field name="gtalk3" type="textarea" filter="raw" default="" cols="30" rows="3" label="GTalk 3" description="GTalk badge 3 encode script." />
+		<field name="gtalk4lbl" type="text" default="" size="53" label="Label GTalk 4" description="GTalk 4 label" />
+	    <field name="gtalk4" type="textarea" filter="raw" default="" cols="30" rows="3" label="GTalk 4" description="GTalk badge 4 encode script." />
+	    <field type="spacer" label="&lt;b&gt;Live Messenger&lt;/b&gt;" />
+		<field name="liveimg" type="list" default="0" label="Status Image" description="GTalk Status Image">
+		  <option value="0">Status 1</option><option value="1">Status 2</option><option value="2">Status 3</option><option value="3">Status 4</option>
+		  <option value="4">Status 5</option><option value="5">Status 6</option><option value="6">Status 7</option><option value="7">Status 8</option>
+		  <option value="8">Status 9</option><option value="9">Status 10</option><option value="10">Status 11</option><option value="11">Status 12</option>
+		  <option value="12">Status 13</option><option value="13">Status 14</option><option value="14">Status 15</option><option value="15">Status 16</option>
+		  <option value="16">Status 17</option><option value="17">Status 18</option><option value="18">Status 19</option><option value="20">Status 21</option>
+		  <option value="21">Status 22</option><option value="22">Status 23</option><option value="23">Status 24</option><option value="24">Status 25</option>
+		  <option value="25">Status 26</option><option value="26">Status 27</option><option value="27">Status 28</option><option value="28">Status 29</option>
+		</field>
+		<field name="live1lbl" type="text" default="" size="53" label="Label Live 1" description="Live 1 label" />
+	    <field name="live1" type="textarea" filter="raw" default="" cols="30" rows="3" label="Live 1" description="Live Messenger 1" />
+		<field name="live2lbl" type="text" default="" size="53" label="Label Live 2" description="Live 2 label" />
+	    <field name="live2" type="textarea" filter="raw" default="" cols="30" rows="3" label="Live 2" description="Live Messenger 2" />
+		<field name="live3lbl" type="text" default="" size="53" label="Label Live 3" description="Live 3 label" />
+	    <field name="live3" type="textarea" filter="raw" default="" cols="30" rows="3" label="Live 3" description="Live Messenger 3" />
+		<field name="live4lbl" type="text" default="" size="53" label="Label Live 4" description="Live 4 label" />
+	    <field name="live4" type="textarea" filter="raw" default="" cols="30" rows="3" label="Live 4" description="Live Messenger 4" />
+	  </fieldset>
+	  <fieldset name="additional" label="Additional Options">
+	    <field name="tmodimg" type="media" size="30" default="" label="Top Module Image" description="Displayed image above of Pre-Text and IM Status." />
+		<field name="txtalign" type="list" default="left" label="Text Align" description="Pre and post text paragraph alignment.">
+		  <option value="left">Left</option>
+		  <option value="center">Center</option>
+		  <option value="right">Right</option>
+		  <option value="justify">Justify</option>
+		</field>
+		<field name="pretext" type="textarea" filter="raw" default="" cols="30" rows="5" label="Pre-Text" description="Pre text above of IM Status." />
+		<field name="posttext" type="textarea" filter="raw" default="" cols="30" rows="5" label="Post-Text" description="Post text below of IM Status." />
+	    <field name="bmodimg" type="media" size="30" default="" label="Bottom Module Image" description="Displayed image above of Pre-Text and IM Status." />
+	  </fieldset>
+	  <fieldset name="advanced">
+		<field name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+	    <field name="cache" type="radio" default="1" label="Enable Cache" description="Select weather to cache the content of this module">
+		  <option value="0">Yes</option>
+		  <option value="1">No</option>
+		</field>
+	    <field name="license" type="text" default="" size="50" label="Module License" description="IM Status Module License Number" />
+	  </fieldset>
+	</fields>
+  </config>
+</extension>
