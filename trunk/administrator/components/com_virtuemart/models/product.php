@@ -377,7 +377,8 @@ class VirtueMartModelProduct extends VmModel {
 		// 		$selectFindRows = 'SELECT SQL_CALC_FOUND_ROWS * FROM `#__virtuemart_products` ';
 		// 		$selectFindRows = 'SELECT COUNT(*) FROM `#__virtuemart_products` ';
 		if($joinLang){
-			$select = ' * FROM `#__virtuemart_products_'.VMLANG.'` as l';
+			// thong dang fix loi virtuemart_product_id
+			$select = ' *,l.virtuemart_product_id FROM `#__virtuemart_products_'.VMLANG.'` as l';
 			$joinedTables = ' JOIN `#__virtuemart_products` AS p using (`virtuemart_product_id`)';
 		} else {
 			$select = ' * FROM `#__virtuemart_products` as p';
@@ -435,7 +436,6 @@ class VirtueMartModelProduct extends VmModel {
 		}*/
 
 		// 		vmdebug('my product ids',$product_ids);
-
 
 		return $product_ids;
 
