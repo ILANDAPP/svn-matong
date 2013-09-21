@@ -66,9 +66,9 @@ foreach ($typefields as $typefield) {
 	    if (!$_table) {
 		// A table hasn't been opened as well. We need one here,
 		if ( $typefield == 'corefield') {
-		   // echo '<span class="userfields_info">' . $this->corefield_title . '</span>';
+		    echo '<span class="userfields_info">' . $this->corefield_title . '</span>';
 		} else {
-		   // echo '<span class="userfields_info">' . $this->vmfield_title . '</span>';
+		    echo '<span class="userfields_info">' . $this->vmfield_title . '</span>';
 		}
 		echo '	<table class="adminform user-details">' . "\n";
 		$_table = true;

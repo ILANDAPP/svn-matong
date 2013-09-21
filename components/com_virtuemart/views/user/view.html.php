@@ -154,7 +154,6 @@ class VirtuemartViewUser extends VmView {
 	    $userFields = $userFields[$virtuemart_userinfo_id];
 	    $task = 'editAddressSt';
 	}
-
 	$this->assignRef('userFields', $userFields);
 
 	if ($layoutName == 'edit') {

@@ -132,7 +132,6 @@ if ( VmConfig::get('showCategory',1) ) {
 <?php }
 }
 ?>
-
 <div class="browse-view">
     <?php
 if (!empty($this->keyword)) {

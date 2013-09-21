@@ -51,7 +51,6 @@ $url = $uri->toString(array('path', 'query', 'fragment'));
         $document->addScriptDeclaration($langScript);
         JHTML::_('script', 'openid.js');
     }
-
     //end plugins section
 
     //anonymous order section
@@ -59,7 +58,6 @@ $url = $uri->toString(array('path', 'query', 'fragment'));
     	?>
 
 	    <div class="order-view">
-
 	    <h1><?php echo JText::_('COM_VIRTUEMART_ORDER_ANONYMOUS') ?></h1>
 
 	    <form action="<?php echo JRoute::_( 'index.php', true, 0); ?>" method="post" name="com-login" >

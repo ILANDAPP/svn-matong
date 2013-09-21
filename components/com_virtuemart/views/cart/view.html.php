@@ -37,7 +37,8 @@ class VirtueMartViewCart extends VmView {
 		$pathway = $mainframe->getPathway();
 		$document = JFactory::getDocument();
 
-		$layoutName = $this->getLayout();
+		//$layoutName = $this->getLayout();
+		$layoutName = 'giohang';
 		if (!$layoutName)
 		$layoutName = JRequest::getWord('layout', 'default');
 		$this->assignRef('layoutName', $layoutName);
@@ -89,7 +90,7 @@ class VirtueMartViewCart extends VmView {
 
 			$pathway->addItem(JText::_('COM_VIRTUEMART_CART_THANKYOU'));
 			$document->setTitle(JText::_('COM_VIRTUEMART_CART_THANKYOU'));
-		} else if ($layoutName == 'default') {
+		} else if ($layoutName == 'default' || $layoutName == 'giohang') {
 
 			$cart->prepareCartViewData();
 
@@ -119,8 +120,9 @@ class VirtueMartViewCart extends VmView {
 				$checkout_task = 'checkout';
 			}
 			$this->assignRef('checkout_task', $checkout_task);
-			$this->checkPaymentMethodsConfigured();
-			$this->checkShipmentMethodsConfigured();
+			//thông báo chưa chọn cấu hình cho giỏ hàng
+			//$this->checkPaymentMethodsConfigured();
+			//$this->checkShipmentMethodsConfigured();
 			if ($cart->virtuemart_shipmentmethod_id) {
 				$this->assignRef('select_shipment_text', JText::_('COM_VIRTUEMART_CART_CHANGE_SHIPPING'));
 			} else {

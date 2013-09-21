@@ -30,7 +30,7 @@ if ($this->fTask === 'savecartuser') {
 ?>
 <h1><?php echo $this->page_title ?></h1>
 <?php
-//echo shopFunctionsF::getLoginForm(false);
+echo shopFunctionsF::getLoginForm(false);
 ?>
 <script language="javascript">
     function myValidator(f, t)
@@ -70,14 +70,14 @@ if ($this->fTask === 'savecartuser') {
 </script>
 
 <fieldset>
-   <!-- <h2><?php
+    <h2><?php
 if ($this->address_type == 'BT') {
     echo JText::_('COM_VIRTUEMART_USER_FORM_EDIT_BILLTO_LBL');
 } else {
     echo JText::_('COM_VIRTUEMART_USER_FORM_ADD_SHIPTO_LBL');
 }
 ?>
-    </h2>-->
+    </h2>
 
 
     <form method="post" id="adminForm" name="userForm" class="form-validate">
