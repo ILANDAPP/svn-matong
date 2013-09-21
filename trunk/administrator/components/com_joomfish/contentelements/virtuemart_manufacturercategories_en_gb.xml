@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>VirtueMart:Manufacturer Categories</name>
+  <author>Emad Bahattab</author>
+  <version>2.0.2</version>
+  <copyright>Emad Bahattab</copyright>
+  <description>Definition for VirtueMart 2(Manufacturer Category)</description>
+  <reference>
+  	<table name="virtuemart_manufacturercategories_en_gb">
+  		<field type="referenceid" name="virtuemart_manufacturercategories_id " translate="0">ID</field>
+  		<field type="titletext" name="mf_category_name" translate="1">Manufacturer Category Name</field>
+  		<field type="textarea" name="mf_category_desc" translate="1">Manufacturer Category Description</field>
+  	</table>
+  </reference>
+</joomfish>

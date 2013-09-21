@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>Danh mục sản phẩm</name>
+  <author>Emad Bahattab</author>
+  <version>2.0.2</version>
+  <copyright>Emad Bahattab</copyright>
+  <description>Definition for VirtueMart 2(Product Category)</description>
+  <reference>
+  	<table name="virtuemart_categories_en_gb">
+  		<field type="referenceid" name="virtuemart_category_id" translate="0">ID</field>
+  		<field type="titletext" name="category_name" translate="1">Name</field>
+  		<field type="textarea" name="category_description" translate="1">Description</field>
+  	</table>
+  </reference>
+</joomfish>
