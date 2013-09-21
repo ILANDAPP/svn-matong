@@ -35,6 +35,7 @@ require_once(dirname(__FILE__).DS.'lib'.DS.'helix.php');
 			<jdoc:include type="modules" name="logo" /></div>
 			<div class='menus'>
 <?php $helix->addFeatures('hornav') //Main navigation ?>	
+<jdoc:include type="modules" name="lang" />
 </div>
             <?php //$helix->addModules("cart") ?>			
 			<?php //$helix->addModules("search") ?>
