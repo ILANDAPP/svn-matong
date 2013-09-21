@@ -141,7 +141,7 @@ class VirtueMartViewCart extends VmView {
 			}
 
 			if (!VmConfig::get('use_as_catalog')) {
-				$checkout_link_html = '<a class="vm-button-correct" href="javascript:document.checkoutForm.submit();" ><span>' . $text . '</span></a>';
+				$checkout_link_html = '<a class="confirm-order" href="javascript:document.checkoutForm.submit();" ><span>' . $text . '</span></a>';
 			} else {
 				$checkout_link_html = '';
 			}

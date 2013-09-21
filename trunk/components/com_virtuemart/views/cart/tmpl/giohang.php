@@ -28,10 +28,10 @@ for($i=1;$i<5;$i++){
 	</div>
 	<div class="checkout-step">
 		<ul>
-			<li <?php echo $active_step['1'];?> ><?php echo JText::_('STEP1')?></li>
-			<li <?php echo $active_step['2'];?> ><?php echo JText::_('STEP2')?></li>
-			<li <?php echo $active_step['3'];?> ><?php echo JText::_('STEP3')?></li>
-			<li <?php echo $active_step['4'];?> ><?php echo JText::_('STEP4')?></li>
+			<li <?php echo $active_step['1'];?> ><div><?php echo JText::_('STEP1')?></div></li>
+			<li <?php echo $active_step['2'];?> ><div><?php echo JText::_('STEP2')?></div></li>
+			<li <?php echo $active_step['3'];?> ><div><?php echo JText::_('STEP3')?></div></li>
+			<li <?php echo $active_step['4'];?> ><div><?php echo JText::_('STEP4')?></div></li>
 		</ul>
 	</div>
 	<div class="body-cart">

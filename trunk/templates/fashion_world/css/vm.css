@@ -374,7 +374,7 @@ table.cart-summary tr th{
 	border-bottom: 1px solid #81c704;
 }
 .checkout-step ul{
-	border: 1px solid #229442;
+/* 	border: 1px solid #229442; */
 	height: 30px;
 }
 .checkout-step ul li{
@@ -409,4 +409,17 @@ table.user-details{
 }
 .pre_button{
 	float: left;
+}
+.confirm-order{
+	border: solid #CAC9C9 1px;
+	border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	text-decoration: none;
+	float: right;
+	background: #358409;
+	padding: 4px 10px;
+	color: white;
+	border-radius: 6px;
+	margin-top: 20px;
 }
