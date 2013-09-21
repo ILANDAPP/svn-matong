@@ -106,24 +106,19 @@ if (empty($this->product)) {
 	    ?>
     	<div class="clear"></div>
         </div>
-		
-		
-		
-		
     <?php } // PDF - Print - Email Icon END
     ?>
 
     <?php
     // Product Short Description
     if (!empty($this->product->product_s_desc)) {
-	?> 
+	?>
         <div class="product-short-description">
 	    <?php
 	    /** @todo Test if content plugins modify the product description */
 	    echo nl2br($this->product->product_s_desc);
 	    ?>
         </div>
-
 	<?php
     } // Product Short Description END
 

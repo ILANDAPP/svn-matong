@@ -23,22 +23,21 @@
 // $viewEscape = new JView();
 // $viewEscape->setEscape('htmlspecialchars');
 
-?><!--<
+?>
 <div class="billto-shipto">
-	div class="width50 floatleft">
-	
+	<div class="width50 floatleft">
+
 		<span><span class="vmicon vm2-billto-icon"></span>
 		<?php echo JText::_('COM_VIRTUEMART_USER_FORM_BILLTO_LBL'); ?></span>
 		<?php // Output Bill To Address ?>
 		<div class="output-billto">
 		<?php
-
 		foreach($this->cart->BTaddress['fields'] as $item){
 			if(!empty($item['value'])){
 				if($item['name']==='agreed'){
 					$item['value'] =  ($item['value']===0) ? JText::_('COM_VIRTUEMART_USER_FORM_BILLTO_TOS_NO'):JText::_('COM_VIRTUEMART_USER_FORM_BILLTO_TOS_YES');
 				}
-				?><?php echo $item['title'] ?></span
+				?><!-- span class="titles"><?php echo $item['title'] ?></span -->
 					<span class="values vm2<?php echo '-'.$item['name'] ?>" ><?php echo $this->escape($item['value']) ?></span>
 				<?php if ($item['name'] != 'title' and $item['name'] != 'first_name' and $item['name'] != 'middle_name' and $item['name'] != 'zip') { ?>
 					<br class="clear" />
@@ -54,8 +53,8 @@
 		</a>
 
 		<input type="hidden" name="billto" value="<?php echo $this->cart->lists['billTo']; ?>"/>
-	</div>-->
-<!--
+	</div>
+
 	<div class="width50 floatleft">
 
 		<span><span class="vmicon vm2-shipto-icon"></span>
@@ -70,7 +69,7 @@
 			echo JText::_('COM_VIRTUEMART_USER_FORM_ST_SAME_AS_BT'). VmHtml::checkbox('STsameAsBT',$this->cart->STsameAsBT).'<br />';
 			foreach($this->cart->STaddress['fields'] as $item){
 				if(!empty($item['value'])){ ?>
-					<span class="titles"><?php echo $item['title'] ?></span> 
+					<!-- <span class="titles"><?php echo $item['title'] ?></span> -->
 					<?php
 					if ($item['name'] == 'first_name' || $item['name'] == 'middle_name' || $item['name'] == 'zip') { ?>
 						<span class="values<?php echo '-'.$item['name'] ?>" ><?php echo $this->escape($item['value']) ?></span>
@@ -94,7 +93,7 @@
 
 	<div class="clear"></div>
 </div>
--->
+<?php if(!empty($this->cart->BTaddress['fields']['email']['value'])&&!empty($this->cart->BTaddress['fields']['first_name']['value'])&&!empty($this->cart->BTaddress['fields']['address_1']['value'])&&!empty($this->cart->BTaddress['fields']['phone_1']['value'])){?>
 <fieldset>
 	<table
 		class="cart-summary"
@@ -117,9 +116,7 @@
                                         <?php if ( VmConfig::get('show_tax')) { ?>
                                 <th align="right" width="60px"><?php  echo "<span  class='priceColor2'>".JText::_('COM_VIRTUEMART_CART_SUBTOTAL_TAX_AMOUNT') ?></th>
 				<?php } ?>
-                                <th align="right" width="60px">
-								<?php //echo "<span  class='priceColor2'>".JText::_('COM_VIRTUEMART_CART_SUBTOTAL_DISCOUNT_AMOUNT') ?>
-								</th>
+                                <th align="right" width="60px"><?php echo "<span  class='priceColor2'>".JText::_('COM_VIRTUEMART_CART_SUBTOTAL_DISCOUNT_AMOUNT') ?></th>
 				<th align="right" width="70px"><?php echo JText::_('COM_VIRTUEMART_CART_TOTAL') ?></th>
 			</tr>
 
@@ -187,7 +184,7 @@
                         <?php if ( VmConfig::get('show_tax')) { ?>
 			<td align="right"><?php echo "<span  class='priceColor2'>".$this->currencyDisplay->createPriceDiv('taxAmount','', $this->cart->pricesUnformatted,false)."</span>" ?></td>
                         <?php } ?>
-			<td align="right"><?php //echo "<span  class='priceColor2'>".$this->currencyDisplay->createPriceDiv('discountAmount','', $this->cart->pricesUnformatted,false)."</span>" ?></td>
+			<td align="right"><?php echo "<span  class='priceColor2'>".$this->currencyDisplay->createPriceDiv('discountAmount','', $this->cart->pricesUnformatted,false)."</span>" ?></td>
 			<td align="right"><?php echo $this->currencyDisplay->createPriceDiv('salesPrice','', $this->cart->pricesUnformatted,false) ?></td>
 		  </tr>
 
@@ -269,7 +266,7 @@
 			if($i) $i=1; else $i=0;
 		} ?>
 
-<!--
+
 	<tr class="sectiontableentry1">
                     <?php if (!$this->cart->automaticSelectedShipment) { ?>
 
@@ -313,7 +310,7 @@
                                 <?php } ?>
 				<td align="right"><?php // Why is this commented? what is with payment discounts? echo "<span  class='priceColor2'>".$this->cart->pricesUnformatted['paymentDiscount']."</span>"; ?></td>
 				<td align="right"><?php  echo $this->currencyDisplay->createPriceDiv('salesPricePayment','', $this->cart->pricesUnformatted['salesPricePayment'],false); ?> </td>
-			</tr>-->
+			</tr>
 		  <tr>
 			<td colspan="4">&nbsp;</td>
 			<td colspan="<?php echo $colspan ?>"><hr /></td>
@@ -347,3 +344,4 @@
 
 	</table>
 </fieldset>
+<?php }?>

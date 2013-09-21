@@ -1,4 +1,4 @@
-xin chao<?php
+<?php
 /**
  *
  * Show the product details page

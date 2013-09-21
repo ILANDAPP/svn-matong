@@ -409,6 +409,37 @@ class VirtueMartControllerCart extends JController {
 		$mainframe = JFactory::getApplication();
 		$mainframe->redirect(JRoute::_('index.php?option=com_virtuemart&view=cart'), 'Cancelled');
 	}
+	function saveBT(){
+		$data = JRequest::get('post');
+		$bt = array();
+		
+		$bt['email']= $data['email'];
+		$bt['first_name']= $data['first_name'];
+		$bt['address_1']= $data['address_1'];
+		$bt['phone_1']= $data['phone_1'];
+		$bt['address_type']= 'BT';
+		
+		$_SESSION['billto'] = $bt;
+		
+		$st = array();
+		
+		$st['shipto_email']= $data['st_email'];
+		$st['shipto_first_name']= $data['st_first_name'];
+		$st['shipto_address_1']= $data['st_address_1'];
+		$st['shipto_phone_1']= $data['st_phone_1'];
+		$st['address_type']= 'ST';
+		
+		$_SESSION['shipto'] = $st;
+		
+		if(!class_exists('VirtueMartCart')) require(JPATH_VM_SITE.DS.'helpers'.DS.'cart.php');
+		$cart = VirtueMartCart::getCart();
+		$cart->saveAddressInCart($bt, $bt['address_type']);
+		$cart->saveAddressInCart($st, $st['address_type']);
+		
+		$_SESSION['step'] = 3;
+		$mainframe = JFactory::getApplication();
+		$mainframe->redirect(JRoute::_('index.php?option=com_virtuemart&view=cart&step=3'));
+	}
 
 }
 
