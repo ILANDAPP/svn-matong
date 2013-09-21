@@ -1,0 +1,15 @@
+<?xml version="1.0" ?>
+<joomfish type="contentelement">
+  <name>VirtueMart:Manufacturers</name>
+  <author>Emad Bahattab</author>
+  <version>2.0.2</version>
+  <copyright>Emad Bahattab</copyright>
+  <description>Definition for VirtueMart 2(Manufacturers)</description>
+  <reference>
+  	<table name="virtuemart_manufacturers_en_gb">
+  		<field type="referenceid" name="virtuemart_manufacturer_id" translate="0">ID</field>
+  		<field type="titletext" name="mf_name" translate="1">Manufacturer Name</field>
+  		<field type="textarea" name="mf_desc" translate="1">Manufacturer Description</field>
+  	</table>
+  </reference>
+</joomfish>
