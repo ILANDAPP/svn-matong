@@ -6,10 +6,10 @@ defined('_JEXEC') or die('Restricted access');
 ?>
 
 <form method="post" id="paymentForm" name="choosePaymentRate" action="<?php echo JRoute::_('index.php'); ?>" class="form-validate">
-<?php
-	echo "<h2>".JText::_('COM_VIRTUEMART_CART_SELECT_PAYMENT_SHIPMENT')."</h2>";
-?>
     <div class="width50 floatleft">
+    <?php
+	echo "<h2>".JText::_('COM_VIRTUEMART_CART_SELECT_PAYMENT')."</h2>";
+?>
 	<?php
      if ($this->found_payment_method) {
 
@@ -32,6 +32,9 @@ defined('_JEXEC') or die('Restricted access');
     ?>
     </div>
     <div class="width50 floatright">
+    <?php
+	echo "<h2>".JText::_('COM_VIRTUEMART_CART_SELECT_SHIPMENT')."</h2>";
+	?>
 	<?php
     if ($this->found_shipment_method) {
 

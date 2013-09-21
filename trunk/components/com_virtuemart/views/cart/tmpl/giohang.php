@@ -9,47 +9,6 @@ for($i=1;$i<5;$i++){
 	}
 }
 ?>
-<style type="text/css">
-	.checkout-step ul{
-		width: 100%;
-		border: 1px solid #229442;
-		height: 30px;
-	}
-	.checkout-step ul li{
-		display: inline-block;
-		float: left;
-		width: 25%;
-		height: 30px;
-		background: #ddd;
-		list-style: none;
-		line-height: 30px;
-		padding: 0;
-		margin: 0;
-		text-align: center;
-	}
-	.checkout-step ul li.act{
-		background: yellow;
-	}
-	td.key{
-		width: 100px;
-	}
-	table.user-details{
-		width: 320px;
-	}
-	#bt_user_info{
-		margin-top: 40px;
-	}
-	#st_user_info{
-		margin-top: 19px;
-	}
-	.next_button{
-		float: right;
-	}
-	.pre_button{
-		float: left;
-	}
-	
-</style>
 <div class="cart-view">
 	<div class="header-cart">
 		<div class="width50 floatleft">
@@ -78,13 +37,13 @@ for($i=1;$i<5;$i++){
 	<div class="body-cart">
 		<?php 
 		if($_SESSION['step']==1){
-			$page = 'infomation';
+			$page = 'cart-info';
 		}else if($_SESSION['step']==2){
 			$page = 'infomation';
 		}else if($_SESSION['step']==3){
 			$page = 'payment_shipment';
 		}else {
-			$page = 'cart-info';
+			$page = 'cart-summer';
 		}
 		include_once 'components/com_virtuemart/views/cart/tmpl/'.$page.'.php';
 		

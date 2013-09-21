@@ -440,7 +440,19 @@ class VirtueMartControllerCart extends JController {
 		$mainframe = JFactory::getApplication();
 		$mainframe->redirect(JRoute::_('index.php?option=com_virtuemart&view=cart&step=3'));
 	}
-
+	function set_payment_shipment(){
+		if(!class_exists('VirtueMartCart')) require(JPATH_VM_SITE.DS.'helpers'.DS.'cart.php');
+		$cart = VirtueMartCart::getCart();
+		if ($cart) {
+			$virtuemart_paymentmethod_id = JRequest::getInt('virtuemart_paymentmethod_id', '0');
+			$cart->setPaymentMethod($virtuemart_paymentmethod_id);
+			$virtuemart_shipmentmethod_id = JRequest::getInt('virtuemart_shipmentmethod_id', '0');
+			$cart->setShipment($virtuemart_shipmentmethod_id);
+		}
+		$_SESSION['step'] = 4;
+		$mainframe = JFactory::getApplication();
+		$mainframe->redirect(JRoute::_('index.php?option=com_virtuemart&view=cart&step=4'));
+	}
 }
 
 //pure php no Tag
