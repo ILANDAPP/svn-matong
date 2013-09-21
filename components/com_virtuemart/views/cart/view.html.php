@@ -38,6 +38,8 @@ class VirtueMartViewCart extends VmView {
 		$document = JFactory::getDocument();
 		if(isset($_GET['step'])){
 			$_SESSION['step'] = $_GET['step'];
+		}else{
+			$_SESSION['step'] = 1;
 		}
 		//$layoutName = $this->getLayout();
 		$layoutName = 'giohang';
