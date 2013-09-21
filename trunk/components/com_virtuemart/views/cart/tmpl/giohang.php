@@ -76,7 +76,19 @@ for($i=1;$i<5;$i++){
 		</ul>
 	</div>
 	<div class="body-cart">
-		<?php include_once 'components/com_virtuemart/views/cart/tmpl/infomation.php';?>
+		<?php 
+		if($_SESSION['step']==1){
+			$page = 'infomation';
+		}else if($_SESSION['step']==2){
+			$page = 'infomation';
+		}else if($_SESSION['step']==3){
+			$page = 'payment_shipment';
+		}else {
+			$page = 'cart-info';
+		}
+		include_once 'components/com_virtuemart/views/cart/tmpl/'.$page.'.php';
+		
+		?>
 	</div>
 </div>
 <?php 

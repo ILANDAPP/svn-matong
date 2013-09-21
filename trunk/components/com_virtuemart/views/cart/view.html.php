@@ -36,7 +36,9 @@ class VirtueMartViewCart extends VmView {
 		$mainframe = JFactory::getApplication();
 		$pathway = $mainframe->getPathway();
 		$document = JFactory::getDocument();
-
+		if(isset($_GET['step'])){
+			$_SESSION['step'] = $_GET['step'];
+		}
 		//$layoutName = $this->getLayout();
 		$layoutName = 'giohang';
 		if (!$layoutName)
@@ -98,6 +100,8 @@ class VirtueMartViewCart extends VmView {
 
 			$this->prepareContinueLink();
 			$this->lSelectCoupon();
+			$this->lSelectPayment();
+			$this->lSelectShipment();
 
 			$currencyDisplay = CurrencyDisplay::getInstance($this->cart->pricesCurrency);
 			$this->assignRef('currencyDisplay',$currencyDisplay);

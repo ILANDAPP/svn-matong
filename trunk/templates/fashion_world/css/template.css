@@ -100,7 +100,8 @@ a#logo{}
 #sp-bottom{background:none;color:#888;font-size:90%}
 
 /* Layout */
-#sp-leftcol, #sp-rightcol, #sp-maincol ,#sp-inset1, #sp-inset2, #inner_content {float:right}
+#sp-leftcol, #sp-rightcol ,#sp-inset1, #sp-inset2, #inner_content {float:right}
+#sp-maincol {float:left}
 #sp-leftcol, #sp-rightcol, #sp-maincol {}
 #sp-user-top{
 	background:#fff;
