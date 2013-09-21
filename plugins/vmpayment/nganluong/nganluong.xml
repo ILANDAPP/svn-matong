@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<install version="1.5" type="plugin" group="vmpayment" >
+    <name>TichHopNL</name>
+    <creationDate>2013</creationDate>
+    <author>theocean</author>
+    <authorUrl>http://www.danhthong.com</authorUrl>
+    <copyright>Copyright (C) 2004-2011. All rights reserved.</copyright>
+    <license>http://www.gnu.org/licenses/gpl-3.0.html GNU/GPL</license>
+    <version>2.0.0RC3</version>
+    <description><![CDATA[<a href="https://www.nganluong.com" target="_blank">NganLuong</a> ]]> </description>
+    <files>
+	<filename plugin="nganluong">nganluong.php</filename>
+    </files>
+    <params addpath="/administrator/components/com_virtuemart/elements">
+	<param type="vmjpluginwarning" />
+	<param type="text" name="nganluong_merchant_email"  size="50" label="Tài khoản tại Ngân Lượng.vn"
+             default="shopduyen.com@gmail.com" description="Tài khoản tại Ngân Lượng.vn" />
+	<param name="status_pending" type="vmorderstate" scope="com_virtuemart" default="P" label="Order Status for Pending Payments" description="VMPAYMENT_NGANLUONG_STATUS_PENDING_EXPLAIN" />
+	<param name="status_success" type="vmorderstate" scope="com_virtuemart" default="C" label="Order Status for Successful transactions" description="Order Status for Successful transactions" />
+	<param name="status_canceled" type="vmorderstate" scope="com_virtuemart" default="X" label="Order Status for Failed transactions" description="Order Status for Failed transactions" />
+	<param name="countries" type="vmcountries"  scope="com_virtuemart" default="" label="Tỉnh/thành" description="Tỉnh/thành"/>
+	<param name="min_amount" type="text"  label="VMPAYMENT_STANDARD_MIN_AMOUNT" description="VMPAYMENT_STANDARD_MIN_AMOUNT_EXPLAIN" />
+	<param name="max_amount" type="text"  label="VMPAYMENT_STANDARD_MAX_AMOUNT" description="VMPAYMENT_STANDARD_MAX_AMOUNT_EXPLAIN" />
+	</params>
+</install>
