@@ -29,7 +29,7 @@ body{color:#525253;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-he
 .sp-block .last {margin-right:-10px}
 .sp-block .single {margin-left:-10px;margin-right:-10px}
 .gap{clear:both; margin-bottom:10px}
-.main-bg {background:none;margin-bottom:10px;margin-top: -82px;}
+.main-bg {background:none;margin-bottom:10px;margin-top: -82px;position: relative;z-index: 2}
 .lbl_f{color:#333;}
 
 /*Header Area*/
