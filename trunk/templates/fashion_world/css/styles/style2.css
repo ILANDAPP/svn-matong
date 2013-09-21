@@ -171,9 +171,8 @@ padding-left: 15px;
 font-weight: normal;
 font-family: Times New Roman;
 margin-bottom: 0px;
-position: absolute;
 top: -36px;
-z-index: 9999;}
+z-index: 3;}
 .cp h3.header{background: none;
 color: #412708;
 padding-left: 9px;

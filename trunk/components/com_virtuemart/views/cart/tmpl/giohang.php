@@ -28,10 +28,36 @@ for($i=1;$i<5;$i++){
 	</div>
 	<div class="checkout-step">
 		<ul>
-			<li <?php echo $active_step['1'];?> ><div><?php echo JText::_('STEP1')?></div></li>
-			<li <?php echo $active_step['2'];?> ><div><?php echo JText::_('STEP2')?></div></li>
-			<li <?php echo $active_step['3'];?> ><div><?php echo JText::_('STEP3')?></div></li>
-			<li <?php echo $active_step['4'];?> ><div><?php echo JText::_('STEP4')?></div></li>
+			<li <?php echo $active_step['1'];?> >
+				<div class="split-1"></div>
+				<div class="step-1">
+					<?php echo JText::_('COM_VIRTUEMART_STEP1')?>
+				</div>
+			</li>
+			<li <?php echo $active_step['2'];?> >
+				<div class="split-1"></div>
+				<div class="split"></div>
+				<div class="step-2">
+					<?php echo JText::_('COM_VIRTUEMART_STEP2')?>
+				</div>
+			</li>
+			<li <?php echo $active_step['3'];?> >
+				<div class="split-1"></div>
+				<div class="split"></div>
+				<div class="split"></div>
+				<div class="step-3">
+					<?php echo JText::_('COM_VIRTUEMART_STEP3')?>
+				</div>
+			</li>
+			<li <?php echo $active_step['4'];?> >
+				<div class="split-1"></div>
+				<div class="split"></div>
+				<div class="split"></div>
+				<div class="split"></div>
+				<div>
+					<?php echo JText::_('COM_VIRTUEMART_STEP4')?>
+				</div>
+			</li>
 		</ul>
 	</div>
 	<div class="body-cart">
