@@ -61,3 +61,12 @@
 <?php 
 include_once 'components/com_virtuemart/views/cart/tmpl/cart-info.php';
 ?>
+<form method="post" id="checkoutForm" name="checkoutForm" action="<?php echo JRoute::_( 'index.php?option=com_virtuemart&view=cart'.$taskRoute,$this->useXHTML,$this->useSSL ); ?>">
+	<?php
+	echo $this->checkout_link_html;
+	$text = JText::_('COM_VIRTUEMART_ORDER_CONFIRM_MNU');
+	?>
+	<input type='hidden' name='task' value='<?php echo $this->checkout_task; ?>'/>
+	<input type='hidden' name='option' value='com_virtuemart'/>
+	<input type='hidden' name='view' value='cart'/>
+</form>
