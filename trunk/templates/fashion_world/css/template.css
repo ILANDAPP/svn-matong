@@ -30,7 +30,7 @@ body{color:#525253;font-family:Arial,Helvetica,sans-serif;font-size:12px;line-he
 .sp-block .single {margin-left:-10px;margin-right:-10px}
 .gap{clear:both; margin-bottom:10px}
 .main-bg {background:none;margin-bottom:10px;margin-top: -82px;position: relative;z-index: 2}
-.lbl_f{color:#333;}
+.lbl_f{color:#333;font-weight: normal;}
 
 /*Header Area*/
 #top-header {margin-bottom:10px}
@@ -130,7 +130,7 @@ padding:10px;background: white;*/
 	margin-bottom:10px;
 	padding-bottom:10px;
   	}
- .item-page{padding-bottom:10px;padding-top:10px;}
+ .item-page{padding-bottom:10px;padding-top:10px;padding-left: 21px;}
 /*Font Resizer*/
 div.font-sizer{width:45px;height:16px;line-height:16px;position:absolute;z-index:1;top:5px;right:10px}
 div.font-sizer a.btn_fs_big,div.font-sizer a.btn_fs_reset,div.font-sizer a.btn_fs_small
@@ -143,14 +143,23 @@ div.font-sizer a.btn_fs_reset:hover{background-position:-15px -16px}
 div.font-sizer a.btn_fs_small:hover{background-position:-30px -16px}
 
 /* Breadcrumbs */
-#breadcrumbs{overflow:hidden;height:30px;line-height:30px;padding:0 7px 0;background:#fff;padding-left: 24px;}
+#breadcrumbs{overflow: hidden;
+height: 30px;
+line-height: 30px;
+padding: 0 7px 0;
+background: #fff;
+padding-left: 0px;
+border-bottom: 1px dotted #ccc;
+width: 70%;
+float: left;
+margin-left: 23px;}
 #breadcrumbs span.showhome {font-weight:bold;margin-right:5px}
 #breadcrumbs .padding{padding:5px 8px}
 #breadcrumbs a,#breadcrumbs span,#breadcrumbs strong{display:block;float:left}
 #breadcrumbs a,#breadcrumbs span.separator{margin-right:10px;padding-right:15px;background:url(../images/breadcrumbs.png) 100% 50% no-repeat}
 #breadcrumbs span.current{color:#666}
 a#topofpage{float:right!important;background:none!important;margin:0!important;padding:0!important;color:#fff;}
-
+#content{margin-top:13px;}
 
 /*Footer Navigation*/
 #sp-footer-nav{float:right;margin-top:8px}
@@ -183,7 +192,7 @@ width: 76%!important;
 .ns2-title a{color:#ffba00;}
 .badge_hot1{display:none;}
 .module_hot1 h3{color: #358508!important;
-
+margin-left: 18px;
 font-size: 20px!important;
 padding: 11px 70px!important;
 
@@ -250,4 +259,5 @@ font-size: 16px;
 font-weight: bold;}
 .dt_product{font-size: 13px;
 font-weight: bold;}
+.item-page h2{}
 	

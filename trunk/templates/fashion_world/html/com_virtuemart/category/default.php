@@ -235,6 +235,7 @@ foreach ( $this->products as $product ) {
 						<?php } ?>
 -->
 					<div class="product-price marginbottom12" id="productPrice<?php echo $product->virtuemart_product_id ?>">
+					<span class="lbl_f">Giá bán:</span>
 					<?php
 					if ($this->show_prices == '1') {
 						if( $product->product_unit && VmConfig::get('vm_price_show_packaging_pricelabel')) {
@@ -258,12 +259,12 @@ foreach ( $this->products as $product ) {
 						echo $this->currency->createPriceDiv('taxAmount','COM_VIRTUEMART_PRODUCT_TAX_AMOUNT',$product->prices);
 					} ?>
 					</div>
-
+<!--
 					<div class="readmore ns2-addtocart">
 					<?php // Product Details Button
 					echo JHTML::link($product->link, JText::_('COM_VIRTUEMART_PRODUCT_DETAILS'), array('title' => $product->product_name,'class' => 'product-details'));
 					?>
-					</div>
+					</div>-->
 <div>
 <!-- The "Average Customer Rating" Part -->
 						
