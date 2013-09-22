@@ -55,12 +55,7 @@ require_once(dirname(__FILE__).DS.'lib'.DS.'helix.php');
 		<?php $helix->addFeatures('toppanel'); ?>
 			
 		
-		<?php if($helix->countModules('breadcrumbs')) { ?>
-			<div id="breadcrumbs" class="sp-inner clearfix">
-				<jdoc:include type="modules" name="breadcrumbs" />
-				<?php $helix->addModules("social") ?>
-			</div>	
-		<?php } ?>
+		
 		</div>
 		
 	
