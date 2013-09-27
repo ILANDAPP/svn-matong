@@ -48,8 +48,12 @@
 	</div>
 	
 	<div class="width50 floatright">
-	<h2><?php echo JText::_('COM_VIRTUEMART_USER_FORM_ADD_SHIPTO_LBL')?></h2>
-	<input type="checkbox" id="copy_info" name="copy_info" "/>Copy
+	<h2><?php echo JText::_('COM_VIRTUEMART_USER_FORM_ADD_SHIPTO_LBL')?>
+	<span style='float:right'>
+	<input type="checkbox" id="copy_info" name="copy_info "/>Copy
+	</span>
+	</h2>
+	
 	<table class="adminform user-details" id="st_user_info" >
 		<tbody><tr>
 			<td class="key">

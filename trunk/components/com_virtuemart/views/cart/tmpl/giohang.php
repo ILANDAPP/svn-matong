@@ -12,7 +12,7 @@ for($i=1;$i<5;$i++){
 <div class="cart-view">
 	<div class="header-cart">
 		<div class="width50 floatleft">
-			<h1><?php echo JText::_('COM_VIRTUEMART_CART_TITLE'); ?></h1>
+			<h1><span><?php echo JText::_('COM_VIRTUEMART_CART_TITLE'); ?></span></h1>
 		</div>
 		<?php if (VmConfig::get('oncheckout_show_steps', 1) && $this->checkout_task==='confirm'){
 			vmdebug('checkout_task',$this->checkout_task);

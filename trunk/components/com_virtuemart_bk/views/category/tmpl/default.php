@@ -174,7 +174,7 @@ if (!empty($this->products)) {
 			<div class="clear"></div>
 			</div> <!-- end of orderby-displaynumber -->
 
-<h1><?php echo $this->category->category_name; ?></h1>
+<h1> <span><?php echo $this->category->category_name; ?></span></h1>
 
 <?php
 // Category and Columns Counter

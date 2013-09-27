@@ -1,10 +1,10 @@
 <fieldset>
 	<table class="cart-summary" cellspacing="0" cellpadding="0" border="0" width="100%">
 		<tr>
-			<th align="left"><?php echo JText::_('COM_VIRTUEMART_CART_NAME') ?></th>
-			<th align="left" width="80px"><?php echo JText::_('COM_VIRTUEMART_CART_SKU') ?></th>
-			<th	align="center" width="60px"><?php echo JText::_('COM_VIRTUEMART_CART_PRICE') ?></th>
-			<th align="right" width="140px"><?php echo JText::_('COM_VIRTUEMART_CART_QUANTITY') ?>
+			<th align="left" width="150px"><?php echo JText::_('COM_VIRTUEMART_CART_NAME') ?></th>
+			<th align="left" width="50px"><?php echo JText::_('COM_VIRTUEMART_CART_SKU') ?></th>
+			<th	align="center" width="120px"><?php echo JText::_('COM_VIRTUEMART_CART_PRICE') ?></th>
+			<th align="right" width="80px"><?php echo JText::_('COM_VIRTUEMART_CART_QUANTITY') ?>
 				/ <?php echo JText::_('COM_VIRTUEMART_CART_ACTION') ?></th>
 
 
@@ -165,7 +165,7 @@
 
 		  <tr>
 			<td colspan="4">&nbsp;</td>
-			<td colspan="<?php echo $colspan ?>"><hr /></td>
+			<td colspan="<?php echo $colspan ?>"></td>
 		  </tr>
 		  <tr class="sectiontableentry2">
 			<td colspan="4" align="right"><?php echo JText::_('COM_VIRTUEMART_CART_TOTAL') ?>: </td>

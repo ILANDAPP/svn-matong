@@ -77,9 +77,10 @@ if (empty($this->product)) {
 	<div>
 		
 		  <div>
+		     <h1 class='title-product'><span><?php echo $this->product->product_name ?></span></h1>
 	<div class="floatleft product_images">
 	<?php // Product Title   ?>
-    <h1><?php echo $this->product->product_name ?></h1>
+ 
     <?php // Product Title END   ?>
 	<?php
 	echo $this->loadTemplate('images');
@@ -199,9 +200,9 @@ if (empty($this->product)) {
 	echo $this->loadTemplate('customfields');
     } // Product Custom ontop end
     ?>
-	</div>
+
 	
-	    <div class="spacer-buy-area">
+	    <div class="price-none spacer-buy-area">
 
 		<?php
 		// TO DO in Multi-Vendor not needed at the moment and just would lead to confusion
@@ -294,7 +295,7 @@ if (empty($this->product)) {
 		
 
 	    </div>
-	</div>
+	</div>	</div>
 	<div class="clear"></div>
     </div>
 
