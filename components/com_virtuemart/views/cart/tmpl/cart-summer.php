@@ -15,7 +15,7 @@
 		</div>
 		<input type="hidden" name="billto" value="<?php echo $this->cart->lists['billTo']; ?>"/>
 	</div>
-	<div class="width50 floatleft">
+	<div class="width50 floatright">
 	<?php echo "<h2 class='shipto-icon'>".JText::_('COM_VIRTUEMART_USER_FORM_SHIPTO_LBL')."</h2>";	?>
 		<div class="output-shipto">
 		<?php

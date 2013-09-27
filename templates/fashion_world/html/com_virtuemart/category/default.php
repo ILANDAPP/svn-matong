@@ -136,7 +136,7 @@ if ( VmConfig::get('showCategory',1) ) {
     <?php
 if (!empty($this->keyword)) {
 	?>
-	<h3><?php echo $this->keyword; ?></h3>
+	<h3> <span><?php echo $this->keyword; ?></span></h3>
 	<?php
 } ?>
  		<?php if ($this->search !==null ) { ?>
@@ -159,7 +159,7 @@ if (!empty($this->keyword)) {
 <?php // Show child categories
 if (!empty($this->products)) {
 ?>
-			<h1><?php echo $this->category->category_name; ?></h1>
+			<h1 class="title-product" style="height: 40px!important;margin-left: 22px!important;"><span><?php echo $this->category->category_name; ?></span></h1>
 
 			<div class="orderby-displaynumber">
 				<div class="width70 floatleft">
